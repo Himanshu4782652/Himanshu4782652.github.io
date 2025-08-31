@@ -221,7 +221,7 @@
   --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
   --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
   --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
-  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+  --color-bg-8: rgba(50, 155, 182, 0.15); /* Dark cyan */
   
   /* Semantic Color Tokens (Dark Mode) */
   --color-background: var(--color-charcoal-700);
