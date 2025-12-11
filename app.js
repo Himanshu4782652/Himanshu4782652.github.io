@@ -44,114 +44,83 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadResumeBtn.addEventListener('click', function() {
             // Create resume content as a text/HTML file
             const resumeContent = `
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Himanshu Srivastav - Resume</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        h1 { color: #2c5282; border-bottom: 2px solid #2c5282; }
-        h2 { color: #2d3748; margin-top: 30px; }
-        .contact { background: #f7fafc; padding: 15px; border-radius: 8px; }
-        .experience, .project { margin-bottom: 20px; border-left: 3px solid #2c5282; padding-left: 15px; }
-        .tech-stack { color: #4a5568; font-style: italic; }
-    </style>
-</head>
-<body>
-    <h1>Himanshu Srivastav</h1>
-    <div class="contact">
-        <strong>Backend Developer</strong><br>
-        Email: himanshusriwastava111@gmail.com<br>
-        Phone: +91-983-576-2937<br>
-        Location: Ujjain, India<br>
-        LinkedIn: linkedin.com/in/himanshu-srivastav<br>
-        GitHub: github.com/himanshu-srivastav
-    </div>
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Himanshu Srivastav - Resume</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+                    h1 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; }
+                    h2 { color: #2d3748; margin-top: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; }
+                    .header-info { background: #f7fafc; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+                    .experience-item, .project-item { margin-bottom: 25px; }
+                    .role-title { font-weight: bold; color: #2c5282; font-size: 1.1em; }
+                    .company-date { color: #718096; font-style: italic; margin-bottom: 10px; display: block; }
+                    .tech-stack { color: #4a5568; font-family: monospace; background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+                    ul { margin-top: 5px; padding-left: 20px; }
+                </style>
+            </head>
+            <body>
+                <h1>Himanshu Srivastav</h1>
+                <div class="header-info">
+                    <strong>Python Full Stack Developer</strong><br>
+                    Email: himanshusriwastava111@gmail.com | Phone: +91-983-576-2937<br>
+                    Location: Ujjain, India | Links: <a href="https://github.com/Himanshu4782652">GitHub</a>
+                </div>
 
-    <h2>Career Objective</h2>
-    <p>Aspiring Backend Developer currently employed as a Software Developer, with skills rooted in Python and Django. Proven ability to develop web applications, including a landing page and a temperature converter. Looking to leverage technical strengths in Python and database management to drive successful backend engineering projects.</p>
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <span class="role-title">Software Developer (Python Full Stack)</span>
+                    <span class="company-date">MR Softwares | May 2025 - Present</span>
+                    <ul>
+                        <li>Developed features using Django & MySQL; managed S3 buckets (Oracle Cloud) for data storage.</li>
+                        <li><strong>Key Project: Waahapp</strong> - Django-based WhatsApp messaging app using Meta API, Webhooks, and Scheduler.</li>
+                        <li><strong>Key Project: Nitiraj Licensing</strong> - Dual-purpose Django app for software licensing and stamping with OCI integration.</li>
+                        <li><strong>Key Project: Desktop Hotel Lock System</strong> - Python GUI application interfacing with RFID hardware.</li>
+                    </ul>
+                </div>
 
-    <h2>Work Experience</h2>
-    <div class="experience">
-        <h3>Software Developer (Python Full Stack) - MR Softwares</h3>
-        <strong>May 2025 - Present | Ujjain</strong>
-        <ul>
-            <li>Developed and integrated new features into existing applications using Django and MySQL</li>
-            <li>Managed and interacted with S3 buckets (Oracle) for data storage and retrieval</li>
-            <li>Contributed to various projects including a Django web application, a data scraping application, and a machine learning initiative</li>
-        </ul>
-    </div>
+                <div class="experience-item">
+                    <span class="role-title">Python Developer Intern</span>
+                    <span class="company-date">CodeAlpha | Oct 2023 - Jan 2024</span>
+                    <ul>
+                        <li>Focused on upscaling skills and contributing to team development goals.</li>
+                    </ul>
+                </div>
 
-    <div class="experience">
-        <h3>Python Developer Intern - CodeAlpha</h3>
-        <strong>Oct 2023 - Jan 2024 | Remote</strong>
-        <ul>
-            <li>Working on upscaling skills and contribute something valuable to the team</li>
-        </ul>
-    </div>
+                <div class="experience-item">
+                    <span class="role-title">Software Developer Intern</span>
+                    <span class="company-date">Oasis Infobyte | Apr 2023 - May 2023</span>
+                    <ul>
+                        <li>Delivered web development projects including a landing page and portfolio.</li>
+                    </ul>
+                </div>
 
-    <div class="experience">
-        <h3>Software Developer Intern - Oasis Infobyte</h3>
-        <strong>Apr 2023 - May 2023 | Virtual</strong>
-        <ul>
-            <li>Completed an internship in web development and design, delivering projects such as a landing page, a private portfolio, and a temperature converter</li>
-            <li>Executed a structured 1-month internship demonstrating rapid learning, adherence to project timelines, and strong problem-solving skills</li>
-        </ul>
-    </div>
+                <h2>Key Projects</h2>
+                
+                <div class="project-item">
+                    <span class="role-title">Vulnerability Scanner</span> <span class="tech-stack">[Python, Django, Security]</span>
+                    <ul>
+                        <li>Security tool designed to identify vulnerabilities in web applications (Feb 2025 - Apr 2025).</li>
+                    </ul>
+                </div>
 
-    <h2>Featured Projects</h2>
-    <div class="project">
-        <h3>Job Portal (Dec 2024 - Jan 2025)</h3>
-        <p>A web application for job management and recruitment using Django</p>
-        <p class="tech-stack">Technologies: Django, Python, HTML, CSS, JavaScript, MySQL</p>
-    </div>
+                <div class="project-item">
+                    <span class="role-title">Process Monitoring System</span> <span class="tech-stack">[Python, Django REST, Windows API]</span>
+                    <ul>
+                        <li>System monitoring Windows processes with a Python agent and Django backend (Jul 2025 - Aug 2025).</li>
+                    </ul>
+                </div>
 
-    <div class="project">
-        <h3>Blogging Website (Oct 2024)</h3>
-        <p>A fully functional blogging website using Flask and HTML, CSS, JavaScript</p>
-        <p class="tech-stack">Technologies: Flask, Python, HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="project">
-        <h3>Tranquil Tides (Oct 2024 - Nov 2024)</h3>
-        <p>Developed a web application for mental health monitoring and self care using Flask</p>
-        <p class="tech-stack">Technologies: Flask, Python, HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="project">
-        <h3>Vulnerability Scanner (Feb 2025 - Apr 2025)</h3>
-        <p>A Web Application Vulnerability Scanner is a security tool designed to identify vulnerabilities in web applications</p>
-        <p class="tech-stack">Technologies: Python, Django, Security Tools</p>
-    </div>
-
-    <div class="project">
-        <h3>Process Monitoring System (Jul 2025 - Aug 2025)</h3>
-        <p>A comprehensive Process Monitoring System with Python agent, Django REST API backend, and interactive web frontend</p>
-        <p class="tech-stack">Technologies: Python, Django, REST API, JavaScript</p>
-    </div>
-
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
-        <li><strong>Frameworks:</strong> Django, Flask, FastAPI</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL, SQLite</li>
-        <li><strong>Tools:</strong> AWS, GitHub, Linux, Oracle Cloud</li>
-        <li><strong>Specializations:</strong> Machine Learning, Deep Learning, Rest APIs, Web Development</li>
-    </ul>
-
-    <h2>Education</h2>
-    <div class="experience">
-        <h3>Bachelor of Technology (B.Tech) - Computer Science & Information Technology</h3>
-        <strong>IES IPS Academy, Indore | 2021 - 2025 | GPA: 7.50/10</strong>
-    </div>
-
-    <h2>Certifications</h2>
-    <ul>
-        <li>Python Developer Associate Certification - AICERT (Sep 2024)</li>
-        <li>Computer Vision Builder - FIIT Delhi (Jan 2024 - Mar 2024)</li>
-    </ul>
-</body>
-</html>
+                <h2>Technical Skills</h2>
+                <p>
+                    <strong>Languages & Frameworks:</strong> Python, Django, Flask, FastAPI, JavaScript, HTML/CSS<br>
+                    <strong>Tools & Cloud:</strong> AWS, Oracle Cloud (OCI), Docker, Git/GitHub, Linux<br>
+                    <strong>Specialized:</strong> Machine Learning, OpenCV, Web Scraping (Selenium/Scrapy), REST APIs
+                </p>
+            </body>
+            </html>
             `;
 
             // Create and download the file
