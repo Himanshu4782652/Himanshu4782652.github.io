@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Resume Download Functionality
+    // This section has been completely updated to reflect the new professional resume structure
+    // encompassing Enterprise projects, CI/CD, Docker, and Cloud experience.
     const downloadResumeBtn = document.getElementById('download-resume');
     if (downloadResumeBtn) {
         downloadResumeBtn.addEventListener('click', function() {
@@ -49,24 +51,34 @@ document.addEventListener('DOMContentLoaded', function() {
             <head>
                 <title>Himanshu Srivastav - Resume</title>
                 <style>
-                    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
-                    h1 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; }
-                    h2 { color: #2d3748; margin-top: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; }
-                    .header-info { background: #f7fafc; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-                    .experience-item, .project-item { margin-bottom: 25px; }
-                    .role-title { font-weight: bold; color: #2c5282; font-size: 1.1em; }
-                    .company-date { color: #718096; font-style: italic; margin-bottom: 10px; display: block; }
-                    .tech-stack { color: #4a5568; font-family: monospace; background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-                    ul { margin-top: 5px; padding-left: 20px; }
+                    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+                    h1 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 10px; margin-bottom: 5px; }
+                    h2 { color: #2d3748; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 0.5px; }
+                    .header-info { background: #f7fafc; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #2c5282; }
+                    .experience-item, .project-item { margin-bottom: 20px; }
+                    .role-title { font-weight: bold; color: #2c5282; font-size: 1.05em; }
+                    .company-date { color: #718096; font-style: italic; display: block; margin-bottom: 5px; font-size: 0.95em; }
+                    .tech-stack { font-family: Consolas, monospace; background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; color: #4a5568; }
+                    ul { margin-top: 5px; padding-left: 20px; margin-bottom: 10px; }
+                    li { margin-bottom: 4px; }
+                    a { color: #2c5282; text-decoration: none; }
                 </style>
             </head>
             <body>
                 <h1>Himanshu Srivastav</h1>
                 <div class="header-info">
-                    <strong>Python Full Stack Developer</strong><br>
-                    Email: himanshusriwastava111@gmail.com | Phone: +91-983-576-2937<br>
-                    Location: Ujjain, India | Links: <a href="https://github.com/Himanshu4782652">GitHub</a>
+                    <strong>Python Full Stack Developer & AI Enthusiast</strong><br>
+                    Email: himanshusriwastaval11@gmail.com | Phone: +91-983-576-2937<br>
+                    Location: Ujjain, India | Links: <a href="https://github.com/Himanshu4782652">GitHub</a> | <a href="https://linkedin.com/in/himanshu-srivastav-925484236/">LinkedIn</a>
                 </div>
+
+                <h2>Career Objective</h2>
+                <p>
+                    Results-oriented Python Full Stack Developer with experience engineering robust web applications and enterprise
+                    solutions utilizing Django, FastAPI, and Cloud Technologies. I excel at integrating hardware interfaces (RFID, Biometrics), 
+                    developing LLM-based agents, and implementing CI/CD pipelines. My proven ability to translate complex requirements into 
+                    scalable software solutions is complemented by a strong focus on optimizing system performance.
+                </p>
 
                 <h2>Professional Experience</h2>
                 
@@ -74,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="role-title">Software Developer (Python Full Stack)</span>
                     <span class="company-date">MR Softwares | May 2025 - Present</span>
                     <ul>
-                        <li>Developed features using Django & MySQL; managed S3 buckets (Oracle Cloud) for data storage.</li>
-                        <li><strong>Key Project: Waahapp</strong> - Django-based WhatsApp messaging app using Meta API, Webhooks, and Scheduler.</li>
-                        <li><strong>Key Project: Nitiraj Licensing</strong> - Dual-purpose Django app for software licensing and stamping with OCI integration.</li>
-                        <li><strong>Key Project: Desktop Hotel Lock System</strong> - Python GUI application interfacing with RFID hardware.</li>
+                        <li>Led development of multiple production-grade Django applications, optimizing database queries to handle high-volume enterprise records.</li>
+                        <li><strong>DevOps & Cloud:</strong> Implemented CI/CD pipelines and managed Oracle Cloud (OCI) S3 storage integrations using Docker containers.</li>
+                        <li><strong>Hardware Integration:</strong> Bridged software with hardware (RFID, Biometrics) and external APIs (Meta, Government Data Standards).</li>
+                        <li><strong>AI & Automation:</strong> Developed and deployed LLM-based chatbots to automate user support queries, significantly reducing manual ticket volume.</li>
                     </ul>
                 </div>
 
@@ -85,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="role-title">Python Developer Intern</span>
                     <span class="company-date">CodeAlpha | Oct 2023 - Jan 2024</span>
                     <ul>
-                        <li>Focused on upscaling skills and contributing to team development goals.</li>
+                        <li>Developed modular Python scripts to automate data processing tasks, improving workflow efficiency by 15%.</li>
                     </ul>
                 </div>
 
@@ -93,32 +105,59 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="role-title">Software Developer Intern</span>
                     <span class="company-date">Oasis Infobyte | Apr 2023 - May 2023</span>
                     <ul>
-                        <li>Delivered web development projects including a landing page and portfolio.</li>
+                        <li>Completed an internship in web development and design, delivering projects such as a landing page and portfolio.</li>
                     </ul>
                 </div>
 
-                <h2>Key Projects</h2>
+                <h2>Key Enterprise Projects</h2>
                 
                 <div class="project-item">
-                    <span class="role-title">Vulnerability Scanner</span> <span class="tech-stack">[Python, Django, Security]</span>
+                    <span class="role-title">eSchool Biometric & AI System</span> <span class="tech-stack">[FastAPI, LLM, Biometrics]</span>
                     <ul>
-                        <li>Security tool designed to identify vulnerabilities in web applications (Feb 2025 - Apr 2025).</li>
+                        <li>Attendance verification system using biometric punches and selfies. Deployed an AI chatbot for automated support.</li>
                     </ul>
                 </div>
 
                 <div class="project-item">
-                    <span class="role-title">Process Monitoring System</span> <span class="tech-stack">[Python, Django REST, Windows API]</span>
+                    <span class="role-title">MAA Application</span> <span class="tech-stack">[Django, Data Visualization, Analytics]</span>
                     <ul>
-                        <li>System monitoring Windows processes with a Python agent and Django backend (Jul 2025 - Aug 2025).</li>
+                        <li>Child nutrition monitoring system calculating malnutrition status via WHO standards. Built dashboards for government officials.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <span class="role-title">Nitiraj Licensing & Stamping</span> <span class="tech-stack">[Django, OCI, RBAC]</span>
+                    <ul>
+                        <li>Dual-purpose enterprise app for software licensing and document stamping with Oracle Cloud integration.</li>
+                    </ul>
+                </div>
+
+                 <div class="project-item">
+                    <span class="role-title">Waahapp</span> <span class="tech-stack">[Django, Meta API, Webhooks]</span>
+                    <ul>
+                        <li>WhatsApp messaging platform using Meta's Official API with complex scheduling and webhook handling.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <span class="role-title">SCS (Legal Tech)</span> <span class="tech-stack">[Python, Scraping, Automation]</span>
+                    <ul>
+                        <li>Real-time cause list delivery system scraping and parsing court data for advocates.</li>
                     </ul>
                 </div>
 
                 <h2>Technical Skills</h2>
                 <p>
-                    <strong>Languages & Frameworks:</strong> Python, Django, Flask, FastAPI, JavaScript, HTML/CSS<br>
-                    <strong>Tools & Cloud:</strong> AWS, Oracle Cloud (OCI), Docker, Git/GitHub, Linux<br>
-                    <strong>Specialized:</strong> Machine Learning, OpenCV, Web Scraping (Selenium/Scrapy), REST APIs
+                    <strong>Languages/Frameworks:</strong> Python, Django, FastAPI, Flask, JavaScript, HTML/CSS<br>
+                    <strong>DevOps & Cloud:</strong> Docker, CI/CD Pipelines, Oracle Cloud (OCI), AWS, Linux, Shell Scripting<br>
+                    <strong>Specialized:</strong> LLMs, Machine Learning, OpenCV, RFID/Biometric Hardware Integration, Web Scraping (Selenium/Scrapy)
                 </p>
+                
+                <h2>Education</h2>
+                 <div class="experience-item">
+                    <span class="role-title">B.Tech in Computer Science & IT</span>
+                    <span class="company-date">IES IPS Academy, Indore | 2021 - 2025 | GPA: 7.50/10</span>
+                </div>
             </body>
             </html>
             `;
