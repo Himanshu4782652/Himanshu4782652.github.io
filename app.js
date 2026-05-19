@@ -97,6 +97,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     metrics.forEach(m => countUpObserver.observe(m));
 
+    // Update footer year
+    const yearSpan = document.getElementById("footer-year");
+    if (yearSpan) {
+        yearSpan.innerText = new Date().getFullYear();
+    }
+
     // Copy Email Functionality
     const copyBtn = document.getElementById("copy-email");
     copyBtn?.addEventListener("click", () => {

@@ -45,15 +45,15 @@
                     <div class="hero-copy reveal">
                         <p class="eyebrow">Python Full Stack Developer | Ujjain, Madhya Pradesh</p>
                         <div class="availability-chip">Available for backend, full-stack, and platform engineering roles</div>
-                        <h1>Production Python systems for enterprise teams, live users, and difficult integrations.</h1>
+                        <h1>Production Python systems for enterprise teams, live users, and difficult migrations.</h1>
                         <p class="hero-text">
-                            I design and ship software that has to work outside the demo environment: biometric attendance, GPS telemetry, WhatsApp SaaS, legal automation, hotel RFID control, and government dashboards.
+                            I design and ship software that handles real-world complexity: biometric attendance (Django to FastAPI migration), 5M+ row database migrations, GPS telemetry, WhatsApp SaaS, and hardware-integrated systems.
                         </p>
 
                         <div class="hero-pills">
-                            <span>6 live client applications</span>
+                            <span>7 live client applications</span>
                             <span>Async Django + FastAPI</span>
-                            <span>AI, GPS, RFID, LLM workflows</span>
+                            <span>Infrastructure Migrations</span>
                         </div>
 
                         <div class="hero-actions">
@@ -73,25 +73,25 @@
                         <div class="panel-card panel-intro">
                             <p class="panel-label">Now Shipping</p>
                             <h2>Python Full Stack Developer at MR Softwares</h2>
-                            <p>Shipping production systems across legal tech, healthcare, hospitality, education, and SaaS since May 2025.</p>
+                            <p>Shipping production systems across legal tech, healthcare, hospitality, education, and SaaS since May 2024.</p>
                         </div>
 
                         <div class="metrics-grid">
                             <article class="metric-card">
-                                <strong>1+ year</strong>
+                                <strong>2+ Years</strong>
                                 <span>Production experience</span>
                             </article>
                             <article class="metric-card">
-                                <strong>Sub-second</strong>
-                                <span>Face matching via Qdrant</span>
+                                <strong>5.08M Rows</strong>
+                                <span>Zero-loss DB migration</span>
                             </article>
                             <article class="metric-card">
-                                <strong>Multi-domain</strong>
-                                <span>GovTech, legal, hospitality, SaaS</span>
+                                <strong>18 Days</strong>
+                                <span>Full service migration</span>
                             </article>
                             <article class="metric-card">
-                                <strong>End-to-end</strong>
-                                <span>Backend, infra, APIs, integrations</span>
+                                <strong>7 Systems</strong>
+                                <span>Live production deployments</span>
                             </article>
                         </div>
                     </aside>
@@ -101,16 +101,16 @@
             <section class="impact-strip">
                 <div class="container impact-grid reveal">
                     <article class="impact-card">
-                        <p class="impact-title">Enterprise Delivery</p>
-                        <p>Built client systems that replaced manual operations with live platforms and automated workflows.</p>
+                        <p class="impact-title">Large-Scale Migrations</p>
+                        <p>Executed zero-loss migrations of 5M+ rows between MySQL and PostgreSQL 18 within tight maintenance windows.</p>
                     </article>
                     <article class="impact-card">
-                        <p class="impact-title">Systems Thinking</p>
-                        <p>Comfortable across async APIs, telemetry pipelines, vector databases, OCR-like scraping flows, and hardware bridges.</p>
+                        <p class="impact-title">Async Architectures</p>
+                        <p>Rebuilt synchronous services into async-native FastAPI systems, eliminating DB bottlenecks and increasing throughput.</p>
                     </article>
                     <article class="impact-card">
-                        <p class="impact-title">Applied AI</p>
-                        <p>Used DeepFace, anti-spoofing, OpenCV, and LLM chatbots in production instead of demo-only prototypes.</p>
+                        <p class="impact-title">Mission-Critical AI</p>
+                        <p>Deployed liveness detection and vector-search matching for biometric attendance serving thousands of daily users.</p>
                     </article>
                 </div>
             </section>
@@ -158,14 +158,15 @@
                                     <p class="job-title">Python Full Stack Developer</p>
                                     <p class="job-meta">MR Softwares | Ujjain, MP</p>
                                 </div>
-                                <p class="job-date">May 2025 - Present</p>
+                                <p class="job-date">May 2024 - Present</p>
                             </div>
                             <ul class="detail-list">
-                                <li>Shipped 6 production Django applications for active paying clients across legal tech, healthcare, hospitality, education, and WhatsApp SaaS.</li>
-                                <li>Built an async biometric attendance platform with DeepFace, Qdrant vector search, and anti-spoofing for secure verification.</li>
-                                <li>Engineered GPS middleware around Traccar and OpenSearch with live dashboards and geofencing alerts.</li>
-                                <li>Integrated RFID encoder and reader hardware with Django workflows for hotel door lock key-card programming.</li>
-                                <li>Deployed LLM-based support automation and optimized ORM-heavy enterprise APIs by removing query bottlenecks.</li>
+                                <li>Shipped 7 production Django/FastAPI applications for active paying clients across legal tech, healthcare, hospitality, education, and WhatsApp SaaS.</li>
+                                <li>Led full framework migration of eSchool service from Django+DRF to FastAPI (async-native) with aiomysql + SQLAlchemy async, completed in 18 working days.</li>
+                                <li>Executed two major infrastructure migrations: (1) MySQL to PostgreSQL 18 (5.08M rows) and (2) Azure Blob to OCI Object Storage with zero data loss.</li>
+                                <li>Built a fully async biometric attendance platform using DeepFace, Qdrant vector storage (sub-second latency), and Silent-Face Anti-Spoofing liveness detection.</li>
+                                <li>Engineered LatLong GPS tracking microservice with geodesic radius calculations (geopy) for automated WhatsApp geofencing alerts.</li>
+                                <li>Containerised all services with Docker, Docker Compose, Nginx, and Supervisor; managed Gunicorn/Daphne/Uvicorn processes.</li>
                             </ul>
                         </article>
 
@@ -210,65 +211,75 @@
                     <div class="project-grid">
                         <article class="project-card reveal">
                             <div class="project-accent accent-green"></div>
-                            <p class="project-type">AI Attendance</p>
-                            <h3>eSchool Biometric and AI Attendance System</h3>
-                            <p>Async Django attendance platform for selfie and group-photo verification using DeepFace, Qdrant, OpenCV, and anti-spoofing controls.</p>
+                            <p class="project-type">AI Attendance (Migration)</p>
+                            <h3>eSchool Biometric & AI Attendance System</h3>
+                            <p>Migrated entire service from Django to FastAPI with a fully async stack (aiomysql + SQLAlchemy async), improving throughput under concurrent load.</p>
                             <ul class="project-points">
-                                <li>Handled production attendance workflows and stronger verification integrity.</li>
-                                <li>Included an LLM chatbot to automate repetitive school support queries.</li>
+                                <li>DeepFace/FaceNet for facial embeddings and Qdrant vector DB for sub-second matching.</li>
+                                <li>Implemented Silent-Face Anti-Spoofing and concurrent face enrollment with ThreadPoolExecutor.</li>
                             </ul>
                             <div class="tag-row">
-                                <span>Django</span>
-                                <span>ASGI</span>
+                                <span>FastAPI</span>
+                                <span>aiomysql</span>
                                 <span>DeepFace</span>
                                 <span>Qdrant</span>
-                                <span>OpenCV</span>
+                                <span>PyTorch</span>
                             </div>
                         </article>
 
                         <article class="project-card reveal" data-delay="80">
-                            <div class="project-accent accent-orange"></div>
-                            <p class="project-type">Telemetry Platform</p>
-                            <h3>LatLong Real-Time GPS Tracking Microservice</h3>
-                            <p>Django and DRF middleware between a Traccar GPS server, OpenSearch telemetry storage, and live customer dashboards.</p>
-                            <ul class="project-points">
-                                <li>Designed indexing and query patterns for continuous location streams.</li>
-                                <li>Added automated geofencing alerts for fleet and staff tracking use cases.</li>
-                            </ul>
-                            <div class="tag-row">
-                                <span>Django REST</span>
-                                <span>Traccar</span>
-                                <span>OpenSearch</span>
-                                <span>Geofencing</span>
-                            </div>
-                        </article>
-
-                        <article class="project-card reveal" data-delay="140">
                             <div class="project-accent accent-blue"></div>
                             <p class="project-type">WhatsApp SaaS</p>
-                            <h3>Waahapp</h3>
-                            <p>Multi-tenant WhatsApp Business SaaS built on Meta's official API with backend scheduling, webhook handling, and triggered messaging.</p>
+                            <h3>WaahApp</h3>
+                            <p>Multi-tenant WhatsApp Business SaaS with bulk messaging, scheduling, and real-time two-way chat using Meta's official Cloud API.</p>
+                            <ul class="project-points">
+                                <li>Led MySQL to PostgreSQL 18 migration (5.08M rows) and Azure Blob to OCI cutover.</li>
+                                <li>Implemented category-specific billing wallets and per-send balance enforcement.</li>
+                            </ul>
                             <div class="tag-row">
                                 <span>Django</span>
                                 <span>Celery</span>
-                                <span>Meta API</span>
-                                <span>PostgreSQL</span>
+                                <span>PostgreSQL 18</span>
+                                <span>Redis</span>
+                                <span>Daphne</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://service.waahapp.com" target="_blank" rel="noreferrer">Live product</a>
                             </div>
                         </article>
 
+                        <article class="project-card reveal" data-delay="140">
+                            <div class="project-accent accent-orange"></div>
+                            <p class="project-type">Telemetry Platform</p>
+                            <h3>LatLong Real-Time GPS Tracking</h3>
+                            <p>Django/DRF middleware between Traccar GPS server and OpenSearch telemetry; triggers geofencing alerts via geopy.</p>
+                            <ul class="project-points">
+                                <li>Generated HMAC-signed, time-expiring tracking links for secure live-view URLs.</li>
+                                <li>Broadcasted real-time positions via Django Channels WebSockets.</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span>Django</span>
+                                <span>OpenSearch</span>
+                                <span>WebSocket</span>
+                                <span>geopy</span>
+                                <span>HMAC</span>
+                            </div>
+                        </article>
+
                         <article class="project-card reveal">
                             <div class="project-accent accent-rose"></div>
                             <p class="project-type">Legal Tech</p>
-                            <h3>SCS App</h3>
-                            <p>Cause-list automation system that scrapes court listings and pushes timely updates to advocates, replacing manual lookup work.</p>
+                            <h3>SCS App - Legal Court Case Scraper</h3>
+                            <p>Multi-court scraping engine covering 6+ Indian High Courts using Selenium, Playwright, and BeautifulSoup4.</p>
+                            <ul class="project-points">
+                                <li>APScheduler with MySQL job store and anti-captcha API integration.</li>
+                                <li>Deployed as Azure Functions and Docker containers.</li>
+                            </ul>
                             <div class="tag-row">
-                                <span>Django</span>
-                                <span>Scrapy</span>
-                                <span>BeautifulSoup4</span>
-                                <span>PostgreSQL</span>
+                                <span>Python</span>
+                                <span>Playwright</span>
+                                <span>Azure Functions</span>
+                                <span>MySQL</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://scsapp.in" target="_blank" rel="noreferrer">Live product</a>
@@ -278,13 +289,17 @@
                         <article class="project-card reveal" data-delay="80">
                             <div class="project-accent accent-gold"></div>
                             <p class="project-type">Hospitality + Hardware</p>
-                            <h3>Nitiraj Hotel Management and RFID Lock System</h3>
-                            <p>Hotel operations platform with direct RFID encoder and reader integration for key-card programming and physical door lock control.</p>
+                            <h3>Nitiraj - Hotel Management & RFID Lock System</h3>
+                            <p>PyQt6 desktop application for front desk operations with integrated RFID card writers via pyserial for NFC keycards.</p>
+                            <ul class="project-points">
+                                <li>Hardware-locked software licensing using MAC address + WMIC UUID fingerprinting.</li>
+                                <li>SQLite schema for guest profiles, reservations, and full unlock audit logging.</li>
+                            </ul>
                             <div class="tag-row">
-                                <span>Django</span>
-                                <span>Python GUI</span>
+                                <span>PyQt6</span>
+                                <span>SQLite</span>
+                                <span>pyserial</span>
                                 <span>RFID</span>
-                                <span>Oracle OCI</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://nitiraj.mrsoftwares.in" target="_blank" rel="noreferrer">Live portal</a>
@@ -294,26 +309,17 @@
                         <article class="project-card reveal" data-delay="140">
                             <div class="project-accent accent-violet"></div>
                             <p class="project-type">GovTech Dashboard</p>
-                            <h3>MAA Child Nutrition Monitoring System</h3>
-                            <p>Government-facing analytics system that calculates malnutrition status from WHO growth standards and visualizes large record sets.</p>
+                            <h3>MAA - Government Child Nutrition Platform</h3>
+                            <p>Government-facing platform for MAA scheme; manages records across Anganwadi centres with WHO growth standard classification.</p>
+                            <ul class="project-points">
+                                <li>Custom binary encryption/decryption (hex-swap) for secure field-device data ingestion.</li>
+                                <li>Streaming CSV export via Django StreamingHttpResponse for large datasets.</li>
+                            </ul>
                             <div class="tag-row">
                                 <span>Django</span>
-                                <span>PostgreSQL</span>
-                                <span>Data Visualization</span>
-                                <span>WHO Standards</span>
-                            </div>
-                        </article>
-
-                        <article class="project-card reveal">
-                            <div class="project-accent accent-slate"></div>
-                            <p class="project-type">Security Tooling</p>
-                            <h3>Web Application Vulnerability Scanner</h3>
-                            <p>Automated crawler-based scanner that detects SQL injection and XSS patterns across target applications without manual URL-by-URL testing.</p>
-                            <div class="tag-row">
-                                <span>Python</span>
-                                <span>Requests</span>
-                                <span>BeautifulSoup4</span>
-                                <span>Security</span>
+                                <span>MySQL</span>
+                                <span>Docker</span>
+                                <span>Encryption</span>
                             </div>
                         </article>
                     </div>
@@ -330,27 +336,27 @@
                     <div class="skills-grid">
                         <article class="skill-card reveal">
                             <h3>Backend</h3>
-                            <p>Python, Django, FastAPI, Flask, Django REST Framework, Celery, ASGI, Uvicorn</p>
+                            <p>Python 3.10+, Django, FastAPI, Flask, adrf (async DRF), Celery, Redis, Shell Scripting</p>
                         </article>
                         <article class="skill-card reveal" data-delay="60">
-                            <h3>Data and Search</h3>
-                            <p>MySQL, PostgreSQL, SQLite, OpenSearch, Qdrant vector database</p>
+                            <h3>Async & Data</h3>
+                            <p>aiomysql, SQLAlchemy async, PostgreSQL 18, MySQL, Qdrant Vector DB, OCI Queue/Streams</p>
                         </article>
                         <article class="skill-card reveal" data-delay="120">
-                            <h3>Cloud and Infra</h3>
-                            <p>Oracle Cloud Infrastructure, AWS, Docker, Linux, shell scripting, REST APIs, webhooks</p>
+                            <h3>AI & Computer Vision</h3>
+                            <p>DeepFace (FaceNet), OpenCV, PyTorch, Silent-Face Anti-Spoofing, LLMs, dlib</p>
                         </article>
                         <article class="skill-card reveal">
-                            <h3>AI and Computer Vision</h3>
-                            <p>DeepFace, OpenCV, machine learning, deep learning, LLM workflows, anti-spoofing</p>
+                            <h3>Cloud & DevOps</h3>
+                            <p>OCI, Azure Blob, Docker, Docker Compose, Nginx, Supervisor, Linux, Azure Functions</p>
                         </article>
                         <article class="skill-card reveal" data-delay="60">
-                            <h3>Automation and Scraping</h3>
-                            <p>BeautifulSoup4, Scrapy, Selenium WebDriver, Requests</p>
+                            <h3>Automation & Scraping</h3>
+                            <p>Playwright, Selenium WebDriver, BeautifulSoup4, Scrapy, anti-captcha APIs</p>
                         </article>
                         <article class="skill-card reveal" data-delay="120">
-                            <h3>Hardware and Frontend</h3>
-                            <p>RFID encoder and reader integration, biometric systems, HTML5, CSS3, JavaScript, Git, GitHub, Postman</p>
+                            <h3>Hardware & APIs</h3>
+                            <p>RFID/Biometric integration (pyserial), Meta WhatsApp API, WebSockets, Traccar GPS API, HMAC security</p>
                         </article>
                     </div>
                 </div>

@@ -593,6 +593,29 @@ section {
     margin-bottom: 0.75rem;
 }
 
+.project-accent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at top right, var(--accent-color), transparent 70%);
+    opacity: 0.4;
+    transition: opacity 0.4s;
+}
+
+.project-card:hover .project-accent {
+    opacity: 0.8;
+}
+
+.accent-green { --accent-color: #10b981; }
+.accent-blue { --accent-color: #3b82f6; }
+.accent-orange { --accent-color: #f59e0b; }
+.accent-rose { --accent-color: #f43f5e; }
+.accent-gold { --accent-color: #fbbf24; }
+.accent-violet { --accent-color: #8b5cf6; }
+.accent-slate { --accent-color: #64748b; }
+
 .project-card h3 {
     font-size: 1.5rem;
     color: var(--white);
