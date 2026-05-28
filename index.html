@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="three-canvas"></canvas>
     <div class="bg-blob blob-1"></div>
     <div class="bg-blob blob-2"></div>
     <div class="page-shell">
@@ -115,6 +116,10 @@
                 </div>
             </section>
 
+            <div class="wave-divider">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><defs><linearGradient id="wg1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2"/></linearGradient></defs><path fill="url(#wg1)"><animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,50 C360,100 720,0 1440,50 L1440,100 L0,100Z;M0,70 C360,20 720,80 1440,30 L1440,100 L0,100Z;M0,50 C360,100 720,0 1440,50 L1440,100 L0,100Z"/></path><path fill="url(#wg1)" opacity="0.5"><animate attributeName="d" dur="12s" repeatCount="indefinite" values="M0,60 C480,10 960,90 1440,40 L1440,100 L0,100Z;M0,40 C480,80 960,10 1440,70 L1440,100 L0,100Z;M0,60 C480,10 960,90 1440,40 L1440,100 L0,100Z"/></path></svg>
+            </div>
+
             <section class="section section-light" id="about">
                 <div class="container about-grid">
                     <div class="section-copy reveal">
@@ -143,6 +148,10 @@
                     </div>
                 </div>
             </section>
+
+            <div class="wave-divider">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><defs><linearGradient id="wg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/><stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/></linearGradient></defs><path fill="url(#wg2)"><animate attributeName="d" dur="9s" repeatCount="indefinite" values="M0,45 C320,90 640,10 1440,55 L1440,100 L0,100Z;M0,65 C320,15 640,85 1440,35 L1440,100 L0,100Z;M0,45 C320,90 640,10 1440,55 L1440,100 L0,100Z"/></path><path fill="url(#wg2)" opacity="0.4"><animate attributeName="d" dur="13s" repeatCount="indefinite" values="M0,55 C500,5 1000,95 1440,45 L1440,100 L0,100Z;M0,35 C500,85 1000,15 1440,65 L1440,100 L0,100Z;M0,55 C500,5 1000,95 1440,45 L1440,100 L0,100Z"/></path></svg>
+            </div>
 
             <section class="section section-dark" id="experience">
                 <div class="container">
@@ -326,11 +335,19 @@
                 </div>
             </section>
 
+            <div class="wave-divider">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><defs><linearGradient id="wg3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/></linearGradient></defs><path fill="url(#wg3)"><animate attributeName="d" dur="7s" repeatCount="indefinite" values="M0,55 C400,95 800,5 1440,45 L1440,100 L0,100Z;M0,35 C400,5 800,95 1440,65 L1440,100 L0,100Z;M0,55 C400,95 800,5 1440,45 L1440,100 L0,100Z"/></path><path fill="url(#wg3)" opacity="0.45"><animate attributeName="d" dur="11s" repeatCount="indefinite" values="M0,65 C450,15 900,85 1440,35 L1440,100 L0,100Z;M0,45 C450,75 900,25 1440,55 L1440,100 L0,100Z;M0,65 C450,15 900,85 1440,35 L1440,100 L0,100Z"/></path></svg>
+            </div>
+
             <section class="section section-light stack-section" id="skills">
                 <div class="container">
                     <div class="section-heading reveal">
                         <p class="section-kicker">Skills</p>
                         <h2 class="section-title">The tools behind the delivery.</h2>
+                    </div>
+
+                    <div class="skills-globe-wrap reveal" data-delay="60">
+                        <div class="skills-globe" id="skills-globe"></div>
                     </div>
 
                     <div class="skills-grid">
@@ -437,6 +454,7 @@
         </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

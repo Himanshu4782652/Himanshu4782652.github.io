@@ -848,3 +848,148 @@ section {
         border-bottom: 1px solid var(--border-light);
     }
 }
+
+/* ==========================================
+   3D VISUAL EFFECTS
+   ========================================== */
+
+/* Three.js Background Canvas */
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Page content layered above canvas */
+.page-shell {
+    position: relative;
+    z-index: 1;
+}
+
+/* Fade CSS blobs when Three.js takes over */
+.three-active .bg-blob {
+    opacity: 0 !important;
+    transition: opacity 1.2s ease;
+}
+
+/* ---- 3D Card Tilt Glow ---- */
+.tilt-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.project-card,
+.metric-card,
+.impact-card,
+.skill-card {
+    transform-style: preserve-3d;
+}
+
+/* ---- Interactive Skills Globe ---- */
+.stack-section > .container {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 2rem 3rem;
+}
+
+.stack-section .section-heading {
+    grid-column: 1 / -1;
+}
+
+.skills-globe-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+#skills-globe {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: grab;
+}
+
+#skills-globe:active {
+    cursor: grabbing;
+}
+
+.globe-tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--text-main);
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: auto;
+    will-change: transform, opacity;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.globe-tag:hover {
+    color: var(--accent-primary) !important;
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+/* ---- Animated Wave Dividers ---- */
+.wave-divider {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.wave-divider svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* ---- 3D Responsive Overrides ---- */
+@media (max-width: 1024px) {
+    .stack-section > .container {
+        display: block;
+    }
+
+    .skills-globe-wrap {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wave-divider {
+        height: 50px;
+    }
+}
+
+/* Accessibility: disable all 3D effects for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    #three-canvas,
+    .tilt-glow,
+    .skills-globe-wrap {
+        display: none !important;
+    }
+
+    .stack-section > .container {
+        display: block;
+    }
+
+    .wave-divider {
+        display: none;
+    }
+}
