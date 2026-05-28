@@ -62,6 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             navMenu.classList.remove("open");
+            if (menuToggle) {
+                menuToggle.innerHTML = '<i class="ri-menu-line"></i>';
+            }
         });
     });
 
@@ -128,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.body.classList.add("three-active");
 
-    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 768;
     var PARTICLE_COUNT = isMobile ? 800 : 2000;
 
     // Scene setup
