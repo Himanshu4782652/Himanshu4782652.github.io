@@ -317,7 +317,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "DeepFace", "OpenCV", "PyTorch", "Qdrant", "OpenSearch",
         "aiomysql", "SQLAlchemy", "DRF", "Playwright", "Selenium",
         "Scrapy", "WebSocket", "RFID", "Azure", "OCI",
-        "Git", "PyQt6", "geopy", "LLMs", "dlib"
+        "Git", "PyQt6", "geopy", "LLMs", "dlib", "Supabase",
+        "Alembic", "JWT", "SQLite"
     ];
 
     var R = 160;
