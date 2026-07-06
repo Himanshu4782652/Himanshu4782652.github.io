@@ -653,6 +653,11 @@ section {
     margin-bottom: 1.5rem;
 }
 
+ .tech-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+ .tech-table th, .tech-table td { padding: 0.75rem 1rem; border: 1px solid var(--border-light); }
+ .tech-table th { background: var(--bg-card); color: var(--white); text-align: left; }
+ .tech-table td { background: rgba(255,255,255,0.02); color: var(--text-dim); }
+
 .tag-row span {
     font-size: 0.75rem;
     background: rgba(255, 255, 255, 0.05);
