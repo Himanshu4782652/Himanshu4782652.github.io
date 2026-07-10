@@ -172,13 +172,12 @@
                                 <p class="job-date">June 2026 - Present</p>
                             </div>
                             <ul class="detail-list">
-                                <li>Develop and train deep learning models for geospatial data analysis and satellite/drone imagery feature detection using PyTorch and TensorFlow.</li>
-                                <li>Analyze and process geospatial raster and vector data with Python libraries including NumPy, OpenCV, and GDAL.</li>
-                                <li>Design and optimize image segmentation, object detection, and classification workflows for aerial and satellite imagery sources.</li>
-                                <li>Integrate deep learning inference pipelines with GIS platforms (ArcGIS) to deliver end-to-end geospatial AI solutions.</li>
-                                <li>Collaborate with GIS developers and data scientists to ship production-ready geospatial feature detection systems.</li>
-                                <li>Deploy trained models on cloud platforms (OCI, Azure) using Docker containerization and CI/CD pipelines.</li>
-                                <li>Continuously research and implement state-of-the-art deep learning methodologies for remote sensing applications.</li>
+                                <li>Lead developer for <strong>Xenterra-Pulse</strong>: Engineered a specialized cloud orchestration and deep learning inference platform for remote sensing and computer vision workloads.</li>
+                                <li>Developed and integrated deep learning bundles for agriculture (crop type detection), environment (wildfire, oil spill, water extraction), and infrastructure (building footprints, road assets, wind turbine defects) using PyTorch, SAM, Grounding-DINO, and U-Net.</li>
+                                <li>Orchestrated large-scale geospatial image ingestion and job scheduling on AWS EKS using Kubernetes; built spatial data pipelines for region transfers and coordinate conversions using GDAL and rasterio.</li>
+                                <li>Implemented SpatioTemporal Asset Catalog (STAC) specifications for spatial asset indexing, file upload systems, and query APIs.</li>
+                                <li>Lead developer for <strong>Xenterra-Fabric</strong>: Architected a multi-tenant cloud control plane backend using FastAPI, PostgreSQL (SQLAlchemy), and Redis.</li>
+                                <li>Built secure user authentication (OAuth, 2FA), workspace management systems, and subscription billing services with AWS pricing APIs.</li>
                             </ul>
                         </article>
 
@@ -403,20 +402,21 @@
         <img src="assets/xenterra_fabric_placeholder.png" class="project-image" alt="Xenterra Fabric Placeholder">
         <h2 class="section-title">Xenterra Fabric – Cloud‑Native SaaS Control Plane</h2>
         <p class="section-kicker">Enterprise SaaS &amp; Cloud Control Plane Backend</p>
-        <p>Robust, multi‑tenant backend platform managing authentication, billing, real‑time cluster monitoring and regional data sync.</p>
+        <p>A core backend platform developed at GJ Maps Solutions serving as the foundation for user management, authentication, and billing operations.</p>
         <ul>
-            <li>Architected multi‑tenant SaaS backend with FastAPI, SQLAlchemy, Alembic migrations and Redis pub‑sub.</li>
-            <li>Implemented OAuth2, 2FA, JWT sessions, email OTP verification and granular RBAC.</li>
-            <li>Built automated subscription billing, tiered plans, promo workflows and AWS cost calculations.</li>
-            <li>Real‑time cloud monitoring via WebSockets &amp; Redis, plus background schedulers for regional/global sync.</li>
+            <li><strong>Authentication &amp; Security:</strong> Handled user authentication, OAuth integration, and two-factor authentication (2FA).</li>
+            <li><strong>Billing System:</strong> Managed subscriptions, invoicing, payment processing, and credit systems, including AWS-based pricing modules.</li>
+            <li><strong>Core Infrastructure:</strong> Managed database sessions, Redis integration, logging, and background task scheduling.</li>
+            <li><strong>Workspace Management:</strong> Provided functionality for creating and administering workspaces and managing user access.</li>
+            <li><strong>CRUD Operations:</strong> Built endpoints for handling users, items, and search functionality.</li>
         </ul>
         <h3>Technical Stack</h3>
         <table class="tech-table">
-            <tr><th>Core</th><td>Python, FastAPI, RESTful APIs, Micro‑services</td></tr>
-            <tr><th>DB &amp; Cache</th><td>PostgreSQL (SQLAlchemy ORM), Alembic, Redis</td></tr>
-            <tr><th>Security</th><td>OAuth2, 2FA/MFA, JWT, Email OTP, RBAC</td></tr>
-            <tr><th>Monetization</th><td>Automated invoicing, subscription plans, AWS pricing API</td></tr>
-            <tr><th>Real‑Time</th><td>WebSockets, Background schedulers, Regional sync</td></tr>
+            <tr><th>Core</th><td>Python, FastAPI, RESTful APIs, Microservices, CRUD endpoints</td></tr>
+            <tr><th>DB &amp; Cache</th><td>PostgreSQL, SQLAlchemy, Alembic, Redis</td></tr>
+            <tr><th>Security</th><td>OAuth2, 2FA/MFA, JWT, OTP, RBAC, Workspace Access Control</td></tr>
+            <tr><th>Billing &amp; Monetization</th><td>Subscription billing, automated invoicing, AWS pricing API, credit systems</td></tr>
+            <tr><th>Infrastructure</th><td>Celery, background schedulers, logging systems, session management</td></tr>
             <tr><th>DevOps</th><td>Docker, Nginx, Systemd, GitHub Actions CI/CD</td></tr>
         </table>
     </div>
@@ -424,23 +424,29 @@
 
 <section class="section section-light" id="xenterra-pulse">
     <div class="container">
+        <img src="assets/xenterra_pulse_placeholder.png" class="project-image" alt="Xenterra Pulse Placeholder">
         <h2 class="section-title">Xenterra Pulse – Geospatial AI &amp; Remote Sensing Platform</h2>
         <p class="section-kicker">Cloud‑Native Geospatial AI &amp; Remote Sensing</p>
-        <p>Distributed platform for ingesting, processing and analysing satellite, aerial and drone imagery with deep‑learning workflows.</p>
+        <p>A specialized engine developed at GJ Maps Solutions focused on cloud operations, data processing, and machine learning inference, designed to process heavy geospatial data workloads.</p>
         <ul>
-            <li>Orchestrated large‑scale image ingestion on AWS EKS with dynamic job scheduling and node classification.</li>
-            <li>Implemented STAC catalog for spatial asset management, bulk ingestion, and spatial search.</li>
-            <li>Integrated PyTorch, SAM, Grounding‑DINO and U‑Net models for automated feature extraction (crop delineation, building footprints, wildfire &amp; oil‑spill tracking, solar‑wind defect detection).</li>
-            <li>Built micro‑services for photogrammetry (OpenDroneMap) and raster‑to‑vector conversion, with serverless Lambda optimisations for format conversion.</li>
-            <li>Optimised storage costs using lifecycle policies for AWS EFS &amp; S3.</li>
+            <li><strong>Cloud &amp; EKS Operations:</strong> Managed Kubernetes-based job orchestration (AWS EKS), image ingestion, and EKS-specific operations for processing large data inputs.</li>
+            <li><strong>Inference &amp; AI Bundles:</strong> Built and integrated an extensive deep learning bundle for various computer vision and remote sensing tasks:
+                <ul>
+                    <li><em>Agriculture:</em> Crop type detection and agricultural delineation.</li>
+                    <li><em>Environmental Monitoring:</em> Oil spill detection, wildfire delineation, and water extraction.</li>
+                    <li><em>Infrastructure Analysis:</em> Building footprint detection, road asset detection, and wind turbine defect analysis.</li>
+                </ul>
+            </li>
+            <li><strong>Data Processing Pipelines:</strong> Built robust pipelines and utilities for region transfers, spatial data transformations, and coordinate system conversions.</li>
+            <li><strong>STAC Support:</strong> Integrated SpatioTemporal Asset Catalog (STAC) specifications for managing metadata, file uploads, and geospatial search querying.</li>
         </ul>
         <h3>Technical Stack</h3>
         <table class="tech-table">
-            <tr><th>Geospatial Core</th><td>STAC, OpenDroneMap, GDAL, ArcGIS API, rasterio</td></tr>
-            <tr><th>AI &amp; Deep Learning</th><td>PyTorch, Segment Anything Model (SAM), Grounding‑DINO, U‑Net, HuggingFace Vision</td></tr>
-            <tr><th>Cloud &amp; Orchestration</th><td>AWS EKS (Kubernetes), Lambda, EFS, S3, Docker, Containerised micro‑services</td></tr>
-            <tr><th>Integrations</th><td>ArcGIS Services, Mapillary API, Microsoft Planetary Computer, custom tile server</td></tr>
-            <tr><th>Use‑Cases</th><td>Crop delineation, building footprint extraction, wildfire &amp; oil‑spill tracking, renewable‑energy asset inspection</td></tr>
+            <tr><th>Geospatial Core</th><td>STAC Catalog, GDAL, rasterio, OpenDroneMap, ArcGIS API</td></tr>
+            <tr><th>AI &amp; Deep Learning</th><td>PyTorch, Segment Anything Model (SAM), Grounding-DINO, U-Net, HuggingFace Vision</td></tr>
+            <tr><th>Cloud &amp; Orchestration</th><td>AWS EKS (Kubernetes), Lambda, EFS, S3, Docker, Containerized microservices</td></tr>
+            <tr><th>Data Pipeline</th><td>Region transfers, spatial transformations, coordinate conversion, raster-to-vector</td></tr>
+            <tr><th>Use Cases</th><td>Crop delineation, building footprints, road assets, wildfire/oil spill tracking, wind turbine defect analysis</td></tr>
         </table>
     </div>
 </section>
