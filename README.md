@@ -1,231 +1,105 @@
-# 🌟 Himanshu Srivastav - Backend Developer Portfolio
+# 🌟 Himanshu Srivastav — Software Developer (FastAPI, Django & Deep Learning)
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://your-username.github.io)
-[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://pages.github.com/)
+[![Live Demo](https://img.shields.io/badge/Live-Portfolio-00ffaa?style=for-the-badge&logo=firefox-browser)](https://himanshu4782652.github.io)
+[![Web Resume](https://img.shields.io/badge/Web-Resume-00f2fe?style=for-the-badge&logo=adobe-acrobat-reader)](https://himanshu4782652.github.io/resume.html)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://himanshu4782652.github.io)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-> A modern, responsive portfolio website showcasing my skills as a Backend Developer specializing in Python and Django.
+> **Software Developer / Software Development Engineer (SDE)** specializing in high-concurrency backends (**FastAPI, Django, PostgreSQL 18, Redis, Celery**), zero-downtime database migrations, and production Deep Learning / Computer Vision microservices (**RF-DETR, Detectron2, Geospatial AI**).
 
-## 🎯 Overview
+---
 
-This portfolio website represents my professional journey as a Backend Developer, highlighting my expertise in Python, Django, Flask, and modern web technologies. Built with a focus on clean code, responsive design, and optimal user experience.
+## 🎯 Target Titles & Role Framing
 
-## ✨ Features
+* **Software Developer**
+* **Software Development Engineer (SDE)**
+* **Backend & AI Systems Engineer (FastAPI & Django)**
 
-### 🎨 Design & UX
-- **Modern Dark Theme** with professional color scheme
-- **Fully Responsive** design for all devices
-- **Smooth Animations** and hover effects
-- **Interactive Elements** with modern UI components
-- **Optimized Performance** for fast loading
+---
 
-### 📱 Responsive Sections
-- **Hero Section** with animated typing effect
-- **About Me** with professional summary and statistics
-- **Experience Timeline** showcasing work history
-- **Projects Gallery** with detailed project information
-- **Skills Visualization** with progress indicators
-- **Contact Form** with validation and integration
-- **Education & Certifications** showcase
+## 💡 Executive Summary
 
-### 🚀 Technical Features
-- **Semantic HTML5** structure
-- **Modern CSS3** with Flexbox and Grid
-- **Vanilla JavaScript** for interactions
-- **Mobile-First** responsive design
-- **Cross-Browser** compatibility
-- **SEO Optimized** structure
-- **Fast Loading** performance
+Software Developer / Software Development Engineer (SDE) with 2+ years of production experience building high-concurrency async backends (FastAPI, Django, PostgreSQL 18, Redis, Celery) and production deep learning / computer vision microservices (RF-DETR, Detectron2, ResUNet, Geospatial AI). Proven track record of independently designing, building, and deploying 8+ enterprise production applications, executing zero-downtime database migrations (5.08M+ rows), and architecting standardized Deep Learning Bundles (DLBs). Experienced in fine-tuning on high-resolution aerial and orbital imagery (USDA NAIP, Sentinel-1/2, ISRO LISS-4), optimizing hardware throughput on NVIDIA Ada Lovelace GPUs (bfloat16 AMP), and building deterministic payload-driven inference services with automated GIS vectorization.
 
-## 🛠️ Technologies Used
+---
 
-### Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+## 🛠️ Core Technical Skills Matrix
 
-### Backend Skills Showcased
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+* **Computer Vision & Deep Learning:** RF-DETR (Lightweight DETR + DINOv2 ViT Backbone), Detectron2, Mask R-CNN, Faster R-CNN, FCN8, ResUNet-4B, Hungarian Bipartite Loss, Soft Dice Loss, Transfer Learning, Anchor Optimization, Segment Anything (SAM), Grounding-DINO.
+* **Geospatial & Remote Sensing:** Rasterio, Shapely, GeoPandas, GDAL, Multi-spectral/SAR Ingestion (Sentinel-1 SAR, Sentinel-2 Optical, USDA NAIP 0.6m–1.0m, ISRO Resourcesat-2 LISS-4 5.0m), GeoTIFF processing, Orthorectification, Cross-Tile Non-Maximum Suppression (NMS), Sliding-Window Tiling, Hanning-window blend reconstruction, NDVI computation, EPSG/WGS84 re-projections.
+* **Frameworks & Languages:** Python 3.10+, PyTorch, PyTorch Lightning, TorchVision, Albumentations, Supervision, OpenCV, NumPy, SciPy, FastAPI, Django, Flask, SQLAlchemy async, aiomysql.
+* **MLOps, Cloud & Systems:** AWS S3, AWS EFS, AWS EKS (Kubernetes), Docker containerization, Linux (WSL2 / Ubuntu), mixed-precision computing (bfloat16/FP16 AMP), NVIDIA RTX 5000 Ada (Ada Lovelace), PostgreSQL 18, Snowflake/Fabric DB syncing, automated test suites (pytest), Redis, Qdrant Vector DB.
 
-### Databases
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white)
+---
 
-### Tools & Platforms
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+## 🚀 Key Metrics Summary
 
-## 📁 Project Structure
+* **Dataset Scale:** 37,830 images / 45,716 annotations (License Plates); 10,178 chips / 4.8M vectors (USA Agriculture); 146k instances (India Agriculture); 2,995 drone frames (Windmill Defects).
+* **Model Accuracy:**
+  * License Plate Detection: **97.64% mAP@50**, **72.13% strict mAP@50:95**.
+  * Windmill Blade Defects: **87.30% mAP@50**, **85.77% F1 score**.
+  * Agricultural Delineation (USA NAIP): **68.84% Mask AP₅₀**, **70.24% Box AP₅₀**.
+  * Maritime Ship Detection: **59.24% mAP@50**, **75.00% Precision**.
+* **System Performance:** Full-scene satellite parcel delineation (Dharwad AOI 32) completed in **15.5 seconds** (**~20 FPS** on RTX 5000 Ada), outputting 2,589 deduplicated parcels.
+* **Memory & Storage Footprint:**
+  * Stable **~3.8GB VRAM** footprint during large-scale instance segmentation training using bfloat16 AMP.
+  * Average production `.dlb` bundle sizes maintained between **83 MB and 156 MB**.
+
+---
+
+## 💼 Project Deep Dives
+
+### 1. Enterprise Deep Learning Bundle (DLB) Engine & Microservices Platform
+* Standardized runtime contracts (`metadata.json`, `data.json`, `inference/main.py`) across object detection, pixel classification, and instance segmentation.
+* Built dual-mode execution interface supporting platform task payloads (with EFS/POSIX path normalization) and CLI debugging.
+* Developed custom CLI packaging utilities (`create_dlb.py`) and automated catalog sync with Snowflake, Fabric DB, and AWS S3.
+
+### 2. Multi-Continental Agricultural Field Delineation (Detectron2 & ResUNet)
+* **USA Pipeline:** USDA NAIP 1.0m orthophotography with Detectron2 Mask R-CNN (ResNet-50-FPN; 68.84% Mask AP₅₀ across 10,178 chips & 4.8M vector annotations).
+* **Europe Pipeline:** Copernicus Sentinel-2 Level-2A (10.0m GSD) sliding-window cadastral mapping.
+* **India 5m Pipeline:** ISRO Resourcesat-2 LISS-4 imagery; 4-band ResUNet-4B with automated NDVI and tuned Detectron2 RPN anchors (`[[12], [24], [48], [96], [192]]`) for smallholder farms (< 1 ha). Delineated 2,589 farm parcels in 15.5 seconds on a full-scene GeoTIFF.
+
+### 3. Edge & Aerial Surveillance via RF-DETR Vision Transformers
+* Upgraded legacy CNN computer vision pipelines to Meta DINOv2-backed Detection Transformers (RF-DETR Medium, 33.4M params).
+* **Vehicle Privacy:** 37,830 images / 45,716 annotations (>97% mAP@50, 72.1% strict mAP@50:95).
+* **Windmill Defect Inspection:** DTU Nordtank dataset with Hungarian bipartite loss on RTX 5000 Ada (87.30% mAP@50, 85.77% F1).
+* **SAR Ship Detection:** LS-SSDD multi-band SAR GeoTIFFs (59.24% mAP@50, 75.0% precision).
+
+### 4. Renewable Energy Mapping & Planetary Model Standardization
+* Packaged Microsoft Global Renewables Watch (GRW) FCN8 ResNet-50 into production DLBs with inlined inference and radiometric normalization.
+* Engineered dataset ingestion pipelines for road surface defects, vehicle-mounted urban asset tracking, Microsoft Solar Farms, and NASA-IBM Prithvi foundation models (Burn Area, Flood, Crop ID).
+
+---
+
+## 📁 Repository Structure
 
 ```
-portfolio/
-├── index.html          # Main HTML file
-├── style.css          # Stylesheet with modern design
-├── app.js             # JavaScript for interactivity
-├── README.md          # Project documentation
-└── assets/            # Images and media files
-    └── icons/         # Custom icons and graphics
+├── index.html                  # Cyber geospatial dark theme portfolio
+├── resume.html                 # Interactive ATS-compliant web resume (with Print CSS)
+├── style.css                   # Cyber HUD styles, telemetry cards, and animations
+├── app.js                      # Three.js 3D plexus scene & 3D rotating skills globe
+├── generate_resume.py          # Python ReportLab compilation script for official PDF resume
+├── assets/
+│   ├── Himanshu_Srivastav_Resume.pdf  # Compiled 2-page ATS-compliant official resume
+│   ├── xenterra_fabric_placeholder.png
+│   └── xenterra_pulse_placeholder.png
+└── README.md                   # Repository documentation
 ```
 
-## 🚀 Quick Start
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/your-username.github.io.git
-cd your-username.github.io
-```
-
-### 2. Local Development
-```bash
-# Open with Live Server (VS Code extension)
-# Or use Python's built-in server
-python -m http.server 8000
-
-# Navigate to http://localhost:8000
-```
-
-### 3. Deploy to GitHub Pages
-1. Push your code to the `main` branch
-2. Go to repository Settings > Pages
-3. Select "Deploy from a branch" > main > / (root)
-4. Your site will be available at `https://your-username.github.io`
-
-## 💼 Featured Projects
-
-### 🎯 Job Portal
-**Tech Stack:** Django, Python, MySQL, HTML/CSS/JS
-- Complete job management and recruitment platform
-- User authentication and authorization
-- Advanced search and filtering capabilities
-- Admin dashboard for job posting management
-
-### 📝 Blogging Website  
-**Tech Stack:** Flask, Python, HTML/CSS/JS
-- Full-featured blogging platform
-- Article creation and management system
-- User authentication and comment system
-- Responsive design for optimal viewing
-
-### 🧘‍♂️ Tranquil Tides
-**Tech Stack:** Flask, Python, HTML/CSS/JS
-- Mental health monitoring and self-care application
-- User progress tracking and analytics
-- Personalized recommendations system
-- Intuitive dashboard for wellness tracking
-
-### 🔒 Vulnerability Scanner
-**Tech Stack:** Python, Django, Security Tools
-- Web application security testing tool
-- Automated vulnerability detection
-- Comprehensive security reporting
-- Risk assessment and mitigation suggestions
-
-### 📊 Process Monitoring System
-**Tech Stack:** Python, Django REST API, JavaScript
-- Real-time process monitoring solution
-- Windows process monitoring agent
-- RESTful API for data management
-- Interactive web dashboard for visualization
-
-## 🎓 Education & Certifications
-
-### 🏫 Education
-- **B.Tech in Computer Science & IT** - IES IPS Academy, Indore (2021-2025) - **GPA: 7.50/10**
-- **Senior Secondary (XII) Science** - RPM Academy, Gorakhpur (2020-2021) - **GPA: 8/10**
-
-### 📜 Certifications
-- **Python Developer Associate Certification** - AICERT (Sep 2024)
-- **Computer Vision Builder** - FIIT Delhi (Jan-Mar 2024)
-
-## 💼 Professional Experience
-
-### 🏢 MR Softwares - Software Developer (Python Full Stack)
-**May 2025 - Present | Ujjain**
-- Developed and integrated new features using Django and MySQL
-- Managed S3 buckets (Oracle) for data storage and retrieval  
-- Contributed to Django web applications, data scraping, and ML projects
-
-### 🏢 CodeAlpha - Python Developer Intern
-**Oct 2023 - Jan 2024 | Remote**
-- Focused on skill enhancement and valuable team contributions
-- Worked on Python development projects
-
-### 🏢 Oasis Infobyte - Software Developer Intern  
-**Apr 2023 - May 2023 | Virtual**
-- Delivered web development projects including portfolio and applications
-- Demonstrated rapid learning and strong problem-solving skills
-
-## 📊 Skills & Expertise
-
-### Programming Languages
-- **Python** (Advanced) - 90%
-- **JavaScript** (Intermediate) - 75%
-- **HTML/CSS** (Advanced) - 85%
-
-### Frameworks & Libraries
-- **Django** (Advanced) - 85%
-- **Flask** (Intermediate) - 80%
-- **FastAPI** (Intermediate) - 70%
-
-### Databases & Tools
-- **MySQL** (Intermediate) - 75%
-- **PostgreSQL** (Intermediate) - 70%
-- **AWS** (Beginner) - 60%
-- **Git/GitHub** (Intermediate) - 80%
+---
 
 ## 🌐 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/himanshu-srivastav)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/himanshu-srivastav)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:himanshusriwastava111@gmail.com)
-
-## 📱 Contact Information
-
-- **📧 Email:** [himanshusriwastava111@gmail.com](mailto:himanshusriwastava111@gmail.com)
-- **📱 Phone:** [+91-983-576-2937](tel:+919835762937)
-- **📍 Location:** Ujjain, India
-- **🌐 Portfolio:** [https://your-username.github.io](https://your-username.github.io)
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own portfolio! If you find any bugs or have suggestions for improvements, please:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Design Inspiration:** Modern portfolio trends and best practices
-- **Icons:** Font Awesome and custom SVG icons
-- **Fonts:** Google Fonts for typography
-- **Hosting:** GitHub Pages for free deployment
-
-## 📈 Performance Metrics
-
-- **PageSpeed Score:** 95+/100
-- **Mobile Friendly:** ✅ Yes
-- **SEO Optimized:** ✅ Yes
-- **Accessibility:** ✅ WCAG Compliant
-- **Loading Time:** < 2 seconds
+* **📧 Email:** [himanshusriwastava111@gmail.com](mailto:himanshusriwastava111@gmail.com)
+* **📱 Phone:** [+91 98357 62937](tel:+919835762937)
+* **📍 Location:** Ujjain, Madhya Pradesh, India
+* **💼 LinkedIn:** [linkedin.com/in/himanshu-srivastav-dev](https://www.linkedin.com/in/himanshu-srivastav-dev)
+* **🐙 GitHub:** [github.com/Himanshu4782652](https://github.com/Himanshu4782652)
+* **🌐 Portfolio:** [himanshu4782652.github.io](https://himanshu4782652.github.io)
+* **📄 Web Resume:** [himanshu4782652.github.io/resume.html](https://himanshu4782652.github.io/resume.html)
 
 ---
 
 <div align="center">
-
-**⭐ Star this repository if you found it helpful!**
-
-*Built with ❤️ by [Himanshu Srivastav](https://github.com/himanshu-srivastav)*
-
+  <b>Built with ❤️ by Himanshu Srivastav</b>
 </div>

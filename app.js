@@ -338,14 +338,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     var skills = [
-        "Python", "Django", "FastAPI", "Flask", "Celery", "Redis",
-        "PostgreSQL", "MySQL", "Docker", "Linux", "Nginx",
-        "DeepFace", "OpenCV", "PyTorch", "Qdrant", "OpenSearch",
-        "aiomysql", "SQLAlchemy", "DRF", "Playwright", "Selenium",
-        "Scrapy", "WebSocket", "RFID", "Azure", "OCI",
-        "Git", "PyQt6", "geopy", "LLMs", "dlib", "Supabase",
-        "Alembic", "JWT", "SQLite", "GDAL", "ArcGIS", "rasterio",
-        "TensorFlow", "Keras", "scikit-learn"
+        "RF-DETR", "DINOv2", "Detectron2", "Mask R-CNN", "ResUNet-4B",
+        "Python", "PyTorch", "PyTorch Lightning", "GDAL", "Rasterio",
+        "GeoPandas", "Shapely", "OpenCV", "Supervision", "Albumentations",
+        "Sentinel-1/2", "USDA NAIP", "ISRO LISS-4", "FastAPI", "Django",
+        "PostgreSQL 18", "Docker", "bfloat16 AMP", "RTX 5000 Ada", "AWS S3",
+        "AWS EFS", "AWS EKS", "Linux", "Deep Learning Bundles", "Qdrant",
+        "Snowflake", "Fabric DB", "Hungarian Loss", "Soft Dice Loss", "NDVI",
+        "Redis", "Celery", "STAC", "pytest", "TorchVision"
     ];
 
     var R = 160;
