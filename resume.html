@@ -521,16 +521,16 @@
                 <div class="job-block">
                     <div class="job-header">
                         <div>
-                            <span class="job-title-line">Python Deep Learning Developer & Computer Vision Engineer</span> &nbsp;|&nbsp;
-                            <span class="job-company">GJ Maps Solutions Pvt. Ltd.</span>
+                            <span class="job-title-line">Software Developer (Deep Learning & Systems)</span> &nbsp;|&nbsp;
+                            <span class="job-company">GJ Maps Solutions Pvt. Ltd. (Engineering Team)</span>
                         </div>
                         <span class="job-date-location">June 2026 – Present | Udaipur, Rajasthan</span>
                     </div>
 
                     <h3 class="domain-title"><i class="ri-earth-line"></i> Geospatial AI, Satellite Observation & Cadastral Mapping</h3>
                     <ul class="bullet-list">
-                        <li>Built a continental agricultural field delineation pipeline with <strong>Detectron2 Mask R-CNN (ResNet-50-FPN)</strong> on 1.0m USDA NAIP aerial orthophotography, achieving <strong>68.84% Mask AP₅₀</strong> across 10,178 image chips and 4.8M vector annotations.</li>
-                        <li>Architected a 5.0m satellite cadastral parcel delineation engine for smallholder agricultural layouts across India (ISRO LISS-4 4-band rasters); custom-tuned Region Proposal Network (RPN) anchors (<code>[[12], [24], [48], [96], [192]]</code>) to capture smallholder plots (&lt; 1 ha).</li>
+                        <li>Collaborated within the engineering team to build a continental agricultural field delineation pipeline with <strong>Detectron2 Mask R-CNN (ResNet-50-FPN)</strong> on 1.0m USDA NAIP aerial orthophotography, achieving <strong>68.84% Mask AP₅₀</strong> across 10,178 image chips and 4.8M vector annotations.</li>
+                        <li>Co-developed a 5.0m satellite cadastral parcel delineation engine for smallholder agricultural layouts across India (ISRO LISS-4 4-band rasters); custom-tuned Region Proposal Network (RPN) anchors (<code>[[12], [24], [48], [96], [192]]</code>) to capture smallholder plots (&lt; 1 ha).</li>
                         <li>Trained the India delineation model for <strong>50,609 iterations (30 epochs)</strong> using bfloat16 AMP on an NVIDIA RTX 5000 Ada (32GB VRAM), maintaining a steady ~3.8GB memory footprint and high training throughput (~3.2 batches/sec).</li>
                         <li>Developed an end-to-end sliding-window inference pipeline (512×512 tiles, 64px overlap) with cross-tile spatial NMS deduplication, delineating <strong>2,589 farm parcels in 15.5 seconds</strong> on a full-scene GeoTIFF and exporting topologically valid vector polygons (GeoJSON) with dynamic acreage computation.</li>
                         <li>Engineered a 4-band <strong>ResUNet-4B</strong> semantic boundary segmenter with Compound Boundary Loss (Boundary-weighted Cross-Entropy + Multiclass Soft Dice Loss), dynamic range normalization, and 2D Hanning-window blend reconstruction to eliminate tile seam artifacts.</li>
@@ -538,7 +538,7 @@
 
                     <h3 class="domain-title"><i class="ri-eye-line"></i> Vision Transformers & Real-Time Object Detection (RF-DETR)</h3>
                     <ul class="bullet-list">
-                        <li>Modernized privacy compliance and asset-tracking pipelines from legacy Faster R-CNN and YOLO models to <strong>RF-DETR Medium (33.4M params, DINOv2 backbone)</strong>, reducing inference latency while boosting localization accuracy.</li>
+                        <li>Collaborated on modernizing privacy compliance and asset-tracking pipelines from legacy Faster R-CNN and YOLO models to <strong>RF-DETR Medium (33.4M params, DINOv2 backbone)</strong>, reducing inference latency while boosting localization accuracy.</li>
                         <li>Built a unified multi-domain dataset of <strong>37,830 images and 45,716 annotations</strong> by aggregating Kaggle, Hugging Face, and 2,078 real-world street scenes from Goa, India; achieved <strong>&gt;97% mAP@50</strong> and <strong>72.1% strict mAP@50:95</strong>.</li>
                         <li>Fine-tuned RF-DETR for turbine blade defect identification (DTU Nordtank dataset), reaching <strong>87.30% mAP@50</strong> and an <strong>85.77% F1 score</strong> across surface pollution (<code>Dirt</code>) and structural fissures (<code>Damage</code>).</li>
                         <li>Trained maritime vessel detection models on SAR satellite imagery (LS-SSDD), achieving <strong>59.24% mAP@50</strong> and <strong>75.0% precision</strong>; diagnosed training telemetry to halt execution at peak convergence (Epoch 13), preventing severe validation overfitting.</li>
@@ -547,11 +547,11 @@
 
                     <h3 class="domain-title"><i class="ri-server-line"></i> Enterprise DL Platform Engineering & MLOps Infrastructure</h3>
                     <ul class="bullet-list">
-                        <li>Designed and deployed standardized <strong>Deep Learning Bundles (DLBs)</strong> containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>).</li>
-                        <li>Eliminated silent runtime failures by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) compatible with distributed cloud worker pods.</li>
+                        <li>Worked within the platform team to design and deploy standardized <strong>Deep Learning Bundles (DLBs)</strong> containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>).</li>
+                        <li>Collaborated on eliminating silent runtime failures by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) compatible with distributed cloud worker pods.</li>
                         <li>Built a dual-mode execution interface supporting platform task payloads (with EFS/POSIX path normalization) and standalone CLI debugging.</li>
                         <li>Developed custom CLI packaging utilities (<code>create_dlb.py</code>) that bundle production weights while filtering out intermediate training checkpoints (<code>.ckpt</code>), caching layers, and database manifests.</li>
-                        <li>Coordinated database synchronization between primary catalog databases (Snowflake/Fabric) and regional inference queues (Pulse DB), managing automated artifact deployment to AWS S3.</li>
+                        <li>Coordinated within the cross-functional data team on database synchronization between primary catalog databases (Snowflake/Fabric) and regional inference queues (Pulse DB), managing automated artifact deployment to AWS S3.</li>
                     </ul>
                 </div>
 

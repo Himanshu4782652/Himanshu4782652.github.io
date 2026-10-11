@@ -269,7 +269,7 @@ def build_pdf(filename):
     # GJ Maps Solutions
     head_data_1 = [
         [
-            Paragraph("<b>Python Deep Learning Developer & Computer Vision Engineer</b><br/><font color='#475569'>GJ Maps Solutions Pvt. Ltd. | Udaipur, Rajasthan</font>", job_title_style),
+            Paragraph("<b>Software Developer (Deep Learning & Systems)</b><br/><font color='#475569'>GJ Maps Solutions Pvt. Ltd. | Udaipur, Rajasthan (Engineering Team)</font>", job_title_style),
             Paragraph("June 2026 – Present", job_meta_style)
         ]
     ]
@@ -284,25 +284,25 @@ def build_pdf(filename):
     story.append(t1)
 
     story.append(Paragraph("Geospatial AI, Satellite Observation & Cadastral Mapping", sub_section_heading_style))
-    story.append(Paragraph("&bull; Built a continental agricultural field delineation pipeline with <b>Detectron2 Mask R-CNN (ResNet-50-FPN)</b> on 1.0m USDA NAIP aerial orthophotography, achieving <b>68.84% Mask AP₅₀</b> across 10,178 image chips and 4.8M vector annotations.", bullet_style))
-    story.append(Paragraph("&bull; Architected a 5.0m satellite cadastral parcel delineation engine for smallholder agricultural layouts across India (ISRO LISS-4 4-band rasters); custom-tuned Region Proposal Network (RPN) anchors (<code>[[12], [24], [48], [96], [192]]</code>) to capture smallholder plots (&lt; 1 ha).", bullet_style))
+    story.append(Paragraph("&bull; Collaborated within the engineering team to build a continental agricultural field delineation pipeline with <b>Detectron2 Mask R-CNN (ResNet-50-FPN)</b> on 1.0m USDA NAIP aerial orthophotography, achieving <b>68.84% Mask AP₅₀</b> across 10,178 image chips and 4.8M vector annotations.", bullet_style))
+    story.append(Paragraph("&bull; Co-developed a 5.0m satellite cadastral parcel delineation engine for smallholder agricultural layouts across India (ISRO LISS-4 4-band rasters); custom-tuned Region Proposal Network (RPN) anchors (<code>[[12], [24], [48], [96], [192]]</code>) to capture smallholder plots (&lt; 1 ha).", bullet_style))
     story.append(Paragraph("&bull; Trained the India delineation model for <b>50,609 iterations (30 epochs)</b> using bfloat16 AMP on an NVIDIA RTX 5000 Ada (32GB VRAM), maintaining a steady ~3.8GB memory footprint and high training throughput (~3.2 batches/sec).", bullet_style))
     story.append(Paragraph("&bull; Developed an end-to-end sliding-window inference pipeline (512×512 tiles, 64px overlap) with cross-tile spatial NMS deduplication, delineating <b>2,589 farm parcels in 15.5 seconds</b> on a full-scene GeoTIFF and exporting topologically valid vector polygons (GeoJSON) with dynamic acreage computation.", bullet_style))
     story.append(Paragraph("&bull; Engineered a 4-band <b>ResUNet-4B</b> semantic boundary segmenter with Compound Boundary Loss (Boundary-weighted Cross-Entropy + Multiclass Soft Dice Loss), dynamic range normalization, and 2D Hanning-window blend reconstruction to eliminate tile seam artifacts.", bullet_style))
 
     story.append(Paragraph("Vision Transformers & Real-Time Object Detection (RF-DETR)", sub_section_heading_style))
-    story.append(Paragraph("&bull; Modernized privacy compliance and asset-tracking pipelines from legacy Faster R-CNN and YOLO models to <b>RF-DETR Medium (33.4M params, DINOv2 backbone)</b>, reducing inference latency while boosting localization accuracy.", bullet_style))
+    story.append(Paragraph("&bull; Collaborated on modernizing privacy compliance and asset-tracking pipelines from legacy Faster R-CNN and YOLO models to <b>RF-DETR Medium (33.4M params, DINOv2 backbone)</b>, reducing inference latency while boosting localization accuracy.", bullet_style))
     story.append(Paragraph("&bull; Built a unified multi-domain dataset of <b>37,830 images and 45,716 annotations</b> by aggregating Kaggle, Hugging Face, and 2,078 real-world street scenes from Goa, India; achieved <b>&gt;97% mAP@50</b> and <b>72.1% strict mAP@50:95</b>.", bullet_style))
     story.append(Paragraph("&bull; Fine-tuned RF-DETR for turbine blade defect identification (DTU Nordtank dataset), reaching <b>87.30% mAP@50</b> and an <b>85.77% F1 score</b> across surface pollution (<i>Dirt</i>) and structural fissures (<i>Damage</i>).", bullet_style))
     story.append(Paragraph("&bull; Trained maritime vessel detection models on SAR satellite imagery (LS-SSDD), achieving <b>59.24% mAP@50</b> and <b>75.0% precision</b>; diagnosed training telemetry to halt execution at peak convergence (Epoch 13), preventing severe validation overfitting.", bullet_style))
     story.append(Paragraph("&bull; Solved deep learning edge cases, including DETR zero-indexed foreground classification mappings, CPU-only worker fallback fixes, and spatial GSD mismatches between high-resolution sensors and orbital backbones.", bullet_style))
 
     story.append(Paragraph("Enterprise DL Platform Engineering & MLOps Infrastructure", sub_section_heading_style))
-    story.append(Paragraph("&bull; Designed and deployed standardized <b>Deep Learning Bundles (DLBs)</b> containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>).", bullet_style))
-    story.append(Paragraph("&bull; Eliminated silent runtime failures by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) compatible with distributed cloud worker pods.", bullet_style))
+    story.append(Paragraph("&bull; Worked within the platform team to design and deploy standardized <b>Deep Learning Bundles (DLBs)</b> containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>).", bullet_style))
+    story.append(Paragraph("&bull; Collaborated on eliminating silent runtime failures by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) compatible with distributed cloud worker pods.", bullet_style))
     story.append(Paragraph("&bull; Built a dual-mode execution interface supporting platform task payloads (with EFS/POSIX path normalization) and standalone CLI debugging.", bullet_style))
     story.append(Paragraph("&bull; Developed custom CLI packaging utilities (<code>create_dlb.py</code>) that bundle production weights while filtering out intermediate training checkpoints (<code>.ckpt</code>), caching layers, and database manifests.", bullet_style))
-    story.append(Paragraph("&bull; Coordinated database synchronization between primary catalog databases (Snowflake/Fabric) and regional inference queues (Pulse DB), managing automated artifact deployment to AWS S3.", bullet_style))
+    story.append(Paragraph("&bull; Coordinated within the cross-functional data team on database synchronization between primary catalog databases (Snowflake/Fabric) and regional inference queues (Pulse DB), managing automated artifact deployment to AWS S3.", bullet_style))
 
     # MR Softwares
     story.append(Spacer(1, 4))
