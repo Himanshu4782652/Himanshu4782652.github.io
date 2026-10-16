@@ -80,7 +80,8 @@ Software Developer / Software Development Engineer (SDE) with 2+ years of produc
 ├── app.js                      # Three.js 3D plexus scene & 3D rotating skills globe
 ├── generate_resume.py          # Python ReportLab compilation script for official PDF resume
 ├── assets/
-│   ├── Himanshu_Srivastav_Resume.pdf  # Compiled 2-page ATS-compliant official resume
+│   ├── Himanshu_Srivastav_Resume.pdf  # Compiled ATS-compliant official resume
+│   ├── resume.pdf                     # Mirror copy of official resume
 │   ├── xenterra_fabric_placeholder.png
 │   └── xenterra_pulse_placeholder.png
 └── README.md                   # Repository documentation
@@ -92,7 +93,7 @@ Software Developer / Software Development Engineer (SDE) with 2+ years of produc
 
 * **📧 Email:** [himanshusriwastava111@gmail.com](mailto:himanshusriwastava111@gmail.com)
 * **📱 Phone:** [+91 98357 62937](tel:+919835762937)
-* **📍 Location:** Ujjain, Madhya Pradesh, India
+* **📍 Location:** Current: Udaipur, Rajasthan | Preferred: Noida, Gurugram, Delhi NCR (Priority Relocation)
 * **💼 LinkedIn:** [linkedin.com/in/himanshu-srivastav-dev](https://www.linkedin.com/in/himanshu-srivastav-dev)
 * **🐙 GitHub:** [github.com/Himanshu4782652](https://github.com/Himanshu4782652)
 * **🌐 Portfolio:** [himanshu4782652.github.io](https://himanshu4782652.github.io)

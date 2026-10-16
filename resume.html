@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Himanshu Srivastav - Computer Vision & Geospatial AI Engineer</title>
-    <meta name="description" content="Resume of Himanshu Srivastav: Computer Vision Engineer, Geospatial AI / Machine Learning Engineer, Deep Learning Platform Engineer.">
+    <title>Resume | Himanshu Srivastav - Software Development Engineer (SDE) & AI/ML Systems Engineer</title>
+    <meta name="description" content="Resume of Himanshu Srivastav: Software Development Engineer (SDE), Python Backend (FastAPI, Django, Flask) & AI/ML Systems Engineer.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081221'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-size='28' font-weight='700' fill='%2300ffaa'%3EHS%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -373,6 +373,48 @@
             color: var(--text-dim);
         }
 
+        /* Metrics Table */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.86rem;
+        }
+
+        .metrics-table th, .metrics-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .metrics-table th {
+            background: var(--surface-card);
+            color: var(--accent);
+            font-weight: 600;
+            font-family: 'Sora', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.5px;
+        }
+
+        .metrics-table td {
+            background: rgba(20, 30, 52, 0.45);
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .metrics-table tr:hover td {
+            background: rgba(0, 255, 170, 0.04);
+        }
+
+        .metrics-table td strong {
+            color: #ffffff;
+        }
+
         /* Print Specific Styling */
         @media print {
             body {
@@ -411,9 +453,15 @@
                 border-bottom: 1.5px solid #cbd5e1 !important;
             }
 
-            .skill-row, .project-item, .metric-mini-card, .info-card {
+            .skill-row, .project-item, .metric-mini-card, .info-card, .metrics-table th, .metrics-table td {
                 background: #f8fafc !important;
-                border-color: #e2e8f0 !important;
+                border-color: #cbd5e1 !important;
+                color: #0f172a !important;
+            }
+
+            .metrics-table th {
+                background: #f1f5f9 !important;
+                color: #0369a1 !important;
             }
 
             .skill-category, .domain-title, .job-company {
@@ -468,9 +516,9 @@
         <main class="resume-doc">
             <section class="resume-header">
                 <h1 class="resume-name">HIMANSHU SRIVASTAV</h1>
-                <p class="target-titles">Software Developer &nbsp;|&nbsp; Software Development Engineer (SDE) &nbsp;|&nbsp; Backend & AI Engineer</p>
+                <p class="target-titles">Software Development Engineer (SDE) &nbsp;|&nbsp; Python Backend (FastAPI, Django, Flask) &amp; AI/ML Systems Engineer</p>
                 <div class="contact-links">
-                    <span><i class="ri-map-pin-line"></i> Ujjain, Madhya Pradesh, India</span>
+                    <span><i class="ri-map-pin-line"></i> Current: Udaipur, Rajasthan | Preferred: Noida, Gurugram, Delhi NCR (Priority Relocation)</span>
                     <span><i class="ri-phone-line"></i> +91 98357 62937</span>
                     <a href="mailto:himanshusriwastava111@gmail.com"><i class="ri-mail-line"></i> himanshusriwastava111@gmail.com</a>
                     <a href="https://linkedin.com/in/himanshu-srivastav-dev" target="_blank"><i class="ri-linkedin-box-line"></i> linkedin.com/in/himanshu-srivastav-dev</a>
@@ -481,35 +529,39 @@
 
             <!-- EXECUTIVE SUMMARY -->
             <section class="resume-section">
-                <h2 class="section-title"><i class="ri-user-star-line"></i> Professional Profile & Executive Summary</h2>
+                <h2 class="section-title"><i class="ri-user-star-line"></i> Executive Summary</h2>
                 <p class="summary-body">
-                    <strong>Software Developer / Software Development Engineer (SDE)</strong> with 2+ years of production experience building high-concurrency async backends (<strong>FastAPI, Django, PostgreSQL 18, Redis, Celery</strong>) and production deep learning / computer vision microservices (<strong>RF-DETR, Detectron2, ResUNet, Geospatial AI</strong>). Proven track record of independently designing, building, and deploying 8+ enterprise production applications, executing zero-downtime database migrations (<strong>5.08M+ rows</strong>), and standardizing <strong>Deep Learning Bundles (DLBs)</strong>. Experienced in fine-tuning on high-resolution aerial and orbital imagery (<strong>USDA NAIP, Sentinel-1/2, ISRO LISS-4</strong>), optimizing hardware throughput on <strong>NVIDIA Ada Lovelace GPUs</strong> (bfloat16 AMP), and building deterministic payload-driven inference services with automated GIS vectorization.
+                    <strong>Software Development Engineer (SDE)</strong> and <strong>Python Backend &amp; AI Engineer</strong> with 2+ years of production experience designing, testing, and debugging high-concurrency asynchronous backends, distributed architectures, and deep learning microservices. Proven track record of independently shipping 8+ end-to-end enterprise production systems (maintaining 500+ Python files across 8 repositories) spanning multi-tenant SaaS, biometric AI, real-time GPS tracking, legal-tech, and geospatial platforms. Expert in <strong>FastAPI, Django, Django REST Framework (DRF), Flask, SQLAlchemy 2.x (async), PostgreSQL 18, Redis, Celery, Docker, OCI, Azure</strong>, and <strong>AWS (EKS, S3, EFS)</strong>. Production deep learning experience architecting <strong>Deep Learning Bundles (DLBs)</strong> across Vision Transformers (<strong>RF-DETR with DINOv2</strong>) and CNNs (<strong>Detectron2 Mask R-CNN, ResUNet-4B</strong>) for high-resolution satellite imagery (<strong>ISRO LISS-4, USDA NAIP, Sentinel-1/2</strong>) with <strong>bfloat16 AMP</strong> on NVIDIA RTX 5000 Ada GPUs.
                 </p>
             </section>
 
             <!-- CORE TECHNICAL SKILLS MATRIX -->
             <section class="resume-section">
-                <h2 class="section-title"><i class="ri-cpu-line"></i> Core Technical Skills Matrix</h2>
+                <h2 class="section-title"><i class="ri-cpu-line"></i> Core Technical Skills</h2>
                 <div class="skills-matrix">
                     <div class="skill-row">
-                        <span class="skill-category">Backend & Frameworks</span>
-                        <span class="skill-items">FastAPI, Django, Django REST Framework (DRF), Flask, adrf (async DRF), Celery, Redis, SQLAlchemy 2.x async, aiomysql, WebSockets, Daphne / ASGI, Uvicorn, RESTful API Design, Microservices Architecture.</span>
+                        <span class="skill-category">Programming &amp; Core</span>
+                        <span class="skill-items">Python (AsyncIO, Multi-processing, Typing, OOP, Pytest, Pytest-Asyncio, Clean Architecture), C++, SQL, Bash/Shell.</span>
                     </div>
                     <div class="skill-row">
-                        <span class="skill-category">Databases & Systems</span>
-                        <span class="skill-items">PostgreSQL 18, MySQL, SQLite, Qdrant Vector DB, OpenSearch, Alembic, multi-tenant DB routing, N+1 query elimination, pgloader zero-downtime migrations (5.08M rows).</span>
+                        <span class="skill-category">Backend &amp; Web Frameworks</span>
+                        <span class="skill-items">FastAPI, Django, Django REST Framework (DRF), Flask, adrf (Async DRF), Celery, Redis, Django Channels (WebSockets), Daphne/ASGI, Uvicorn, REST APIs, Microservices Architecture.</span>
                     </div>
                     <div class="skill-row">
-                        <span class="skill-category">Computer Vision & DL</span>
-                        <span class="skill-items">RF-DETR (Lightweight DETR + DINOv2 ViT Backbone), Detectron2, Mask R-CNN, Faster R-CNN, FCN8, ResUNet-4B, Hungarian Bipartite Loss, Soft Dice Loss, Transfer Learning, Anchor Optimization, SAM, Grounding-DINO, DeepFace (FaceNet).</span>
+                        <span class="skill-category">Databases, ORMs &amp; Caching</span>
+                        <span class="skill-items">PostgreSQL 18, MySQL, SQLite, Qdrant (Vector DB), OpenSearch; SQLAlchemy 2.x (Async Engine, AsyncSession, SessionPool), aiomysql, Tortoise-ORM, Django ORM, Alembic migrations; Redis cache/broker; 5.08M row zero-downtime pgloader migrations, N+1 query elimination, indexing.</span>
                     </div>
                     <div class="skill-row">
-                        <span class="skill-category">Geospatial & Remote Sensing</span>
-                        <span class="skill-items">Rasterio, Shapely, GeoPandas, GDAL, Multi-spectral/SAR (Sentinel-1 SAR, Sentinel-2 Optical, USDA NAIP 0.6m–1.0m, ISRO LISS-4 5.0m), GeoTIFF, Orthorectification, Cross-Tile NMS, Sliding-Window Tiling, Hanning-blend, NDVI, STAC.</span>
+                        <span class="skill-category">Cloud, DevOps &amp; Distributed</span>
+                        <span class="skill-items">AWS (EKS, S3, EFS), Oracle Cloud Infrastructure (OCI Compute, Object Storage), Microsoft Azure (VMs, Blob, Azure Functions), Linux VPS (Ubuntu, Debian, WSL2); Docker, Docker Compose, GHCR; Nginx reverse proxy, Gunicorn, systemd, Let's Encrypt SSL/TLS, GitHub Actions CI/CD.</span>
                     </div>
                     <div class="skill-row">
-                        <span class="skill-category">Cloud, MLOps & Hardware</span>
-                        <span class="skill-items">AWS (EKS, S3, EFS), Docker containerization, Linux (WSL2 / Ubuntu), mixed-precision computing (bfloat16/FP16 AMP), NVIDIA RTX 5000 Ada (Ada Lovelace), Snowflake / Fabric DB syncing, automated test suites (pytest), CI/CD.</span>
+                        <span class="skill-category">AI, Deep Learning &amp; Vision</span>
+                        <span class="skill-items">RF-DETR (DINOv2 backbone), Detectron2 Mask R-CNN (ResNet-50-FPN), Faster R-CNN, ResUNet-4B, FCN8, DeepFace (FaceNet), MiniFASNetV2 (Silent-Face Anti-Spoofing), Hungarian Loss, Soft Dice Loss, bfloat16 AMP, RTX 5000 Ada (32GB VRAM), PyTorch, PyTorch Lightning, TorchVision, Albumentations, Supervision, OpenCV.</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-category">Geospatial, Scraping &amp; Systems</span>
+                        <span class="skill-items">Rasterio, Shapely, GeoPandas, GDAL, Multi-spectral/SAR (Sentinel-1 SAR, Sentinel-2 Optical, USDA NAIP, ISRO LISS-4), STAC, GeoTIFF, Orthorectification, Cross-Tile NMS, Sliding-Window Tiling, Hanning-blend, NDVI; Playwright, Selenium, BeautifulSoup4, APScheduler; PyQt6 desktop GUIs, pyserial (physical RFID hardware integration).</span>
                     </div>
                 </div>
             </section>
@@ -521,37 +573,22 @@
                 <div class="job-block">
                     <div class="job-header">
                         <div>
-                            <span class="job-title-line">Software Developer (Deep Learning & Systems)</span> &nbsp;|&nbsp;
-                            <span class="job-company">GJ Maps Solutions Pvt. Ltd. (Engineering Team)</span>
+                            <span class="job-title-line">Software Developer / Python Deep Learning &amp; Backend Engineer</span> &nbsp;|&nbsp;
+                            <span class="job-company">GJ Maps Solutions Pvt. Ltd.</span>
                         </div>
                         <span class="job-date-location">June 2026 – Present | Udaipur, Rajasthan</span>
                     </div>
 
-                    <h3 class="domain-title"><i class="ri-earth-line"></i> Geospatial AI, Satellite Observation & Cadastral Mapping</h3>
                     <ul class="bullet-list">
-                        <li>Collaborated within the engineering team to build a continental agricultural field delineation pipeline with <strong>Detectron2 Mask R-CNN (ResNet-50-FPN)</strong> on 1.0m USDA NAIP aerial orthophotography, achieving <strong>68.84% Mask AP₅₀</strong> across 10,178 image chips and 4.8M vector annotations.</li>
-                        <li>Co-developed a 5.0m satellite cadastral parcel delineation engine for smallholder agricultural layouts across India (ISRO LISS-4 4-band rasters); custom-tuned Region Proposal Network (RPN) anchors (<code>[[12], [24], [48], [96], [192]]</code>) to capture smallholder plots (&lt; 1 ha).</li>
-                        <li>Trained the India delineation model for <strong>50,609 iterations (30 epochs)</strong> using bfloat16 AMP on an NVIDIA RTX 5000 Ada (32GB VRAM), maintaining a steady ~3.8GB memory footprint and high training throughput (~3.2 batches/sec).</li>
-                        <li>Developed an end-to-end sliding-window inference pipeline (512×512 tiles, 64px overlap) with cross-tile spatial NMS deduplication, delineating <strong>2,589 farm parcels in 15.5 seconds</strong> on a full-scene GeoTIFF and exporting topologically valid vector polygons (GeoJSON) with dynamic acreage computation.</li>
-                        <li>Engineered a 4-band <strong>ResUNet-4B</strong> semantic boundary segmenter with Compound Boundary Loss (Boundary-weighted Cross-Entropy + Multiclass Soft Dice Loss), dynamic range normalization, and 2D Hanning-window blend reconstruction to eliminate tile seam artifacts.</li>
-                    </ul>
-
-                    <h3 class="domain-title"><i class="ri-eye-line"></i> Vision Transformers & Real-Time Object Detection (RF-DETR)</h3>
-                    <ul class="bullet-list">
-                        <li>Collaborated on modernizing privacy compliance and asset-tracking pipelines from legacy Faster R-CNN and YOLO models to <strong>RF-DETR Medium (33.4M params, DINOv2 backbone)</strong>, reducing inference latency while boosting localization accuracy.</li>
-                        <li>Built a unified multi-domain dataset of <strong>37,830 images and 45,716 annotations</strong> by aggregating Kaggle, Hugging Face, and 2,078 real-world street scenes from Goa, India; achieved <strong>&gt;97% mAP@50</strong> and <strong>72.1% strict mAP@50:95</strong>.</li>
-                        <li>Fine-tuned RF-DETR for turbine blade defect identification (DTU Nordtank dataset), reaching <strong>87.30% mAP@50</strong> and an <strong>85.77% F1 score</strong> across surface pollution (<code>Dirt</code>) and structural fissures (<code>Damage</code>).</li>
-                        <li>Trained maritime vessel detection models on SAR satellite imagery (LS-SSDD), achieving <strong>59.24% mAP@50</strong> and <strong>75.0% precision</strong>; diagnosed training telemetry to halt execution at peak convergence (Epoch 13), preventing severe validation overfitting.</li>
-                        <li>Solved deep learning edge cases, including DETR zero-indexed foreground classification mappings, CPU-only worker fallback fixes, and spatial GSD mismatches between high-resolution sensors and orbital backbones.</li>
-                    </ul>
-
-                    <h3 class="domain-title"><i class="ri-server-line"></i> Enterprise DL Platform Engineering & MLOps Infrastructure</h3>
-                    <ul class="bullet-list">
-                        <li>Worked within the platform team to design and deploy standardized <strong>Deep Learning Bundles (DLBs)</strong> containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>).</li>
-                        <li>Collaborated on eliminating silent runtime failures by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) compatible with distributed cloud worker pods.</li>
-                        <li>Built a dual-mode execution interface supporting platform task payloads (with EFS/POSIX path normalization) and standalone CLI debugging.</li>
-                        <li>Developed custom CLI packaging utilities (<code>create_dlb.py</code>) that bundle production weights while filtering out intermediate training checkpoints (<code>.ckpt</code>), caching layers, and database manifests.</li>
-                        <li>Coordinated within the cross-functional data team on database synchronization between primary catalog databases (Snowflake/Fabric) and regional inference queues (Pulse DB), managing automated artifact deployment to AWS S3.</li>
+                        <li><strong>Xenterra-Fabric (Distributed Backend Platform):</strong> Architected, wrote, tested, and debugged production Python REST APIs for OAuth and 2FA authentication, billing/subscription engines (invoicing, credit ledgers, AWS-based pricing), workspace management, and CRUD endpoints backed by PostgreSQL sessions, Redis, and background task queues.</li>
+                        <li><strong>Xenterra-Pulse &amp; Deep Learning Bundles (DLBs):</strong> Designed and deployed standardized DLBs containing deterministic runtime specifications (<code>metadata.json</code>), catalog schemas (<code>data.json</code>), and isolated execution engines (<code>inference/main.py</code>) validated via automated <code>pytest</code> suites.</li>
+                        <li><strong>Fault-Tolerant Cloud Orchestration:</strong> Eliminated silent runtime failures and platform hanging bugs by replacing mock fallbacks with strict fail-loud exception contracts and non-blocking job progress reporting (<code>update_job_status</code>) across distributed Kubernetes/EKS worker pods.</li>
+                        <li><strong>MLOps Packaging &amp; Multi-Cloud Sync:</strong> Built a dual-mode execution interface supporting cloud task payloads (AWS EFS/POSIX path normalization) and CLI debugging, alongside custom packaging utilities (<code>create_dlb.py</code>) maintaining lean 83–156 MB bundles; synchronized Snowflake/Fabric and Pulse DB catalogs with automated S3 artifact deployment, ArcGIS/STAC integration, and OCI/Azure CI/CD pipelines.</li>
+                        <li><strong>Geospatial AI &amp; Satellite Delineation:</strong> Built a continental agricultural field delineation pipeline with Detectron2 Mask R-CNN (ResNet-50-FPN) on 1.0m USDA NAIP imagery, achieving 68.84% Mask AP and 70.24% Box AP across 10,178 image chips and 4.8M vector annotations.</li>
+                        <li><strong>Smallholder Parcel Engine &amp; GPU Optimization:</strong> Co-developed a 5.0m cadastral parcel engine for India (ISRO LISS-4 4-band rasters, 146k instances) with custom RPN anchors (<code>[[12], [24], [48], [96], [192]]</code>); trained for 50,609 iterations (30 epochs) using bfloat16 AMP on an NVIDIA RTX 5000 Ada (32GB VRAM) at a steady ~3.8GB VRAM footprint and ~3.2 batches/sec.</li>
+                        <li><strong>High-Throughput Sliding-Window Inference &amp; ResUNet-4B:</strong> Engineered a 512×512 sliding-window pipeline (64px overlap) with cross-tile spatial NMS deduplication, delineating 2,589 farm parcels in 15.5s (~20 FPS) into WGS84 GeoJSON polygons; built a 4-band ResUNet-4B boundary segmenter with Compound Boundary Loss, dynamic NDVI normalization, and 2D Hanning-window blending.</li>
+                        <li><strong>Vision Transformers (RF-DETR Medium, 33.4M Params, DINOv2 Backbone):</strong> Upgraded legacy Faster R-CNN and YOLO pipelines across three domains: (a) <em>License Plate Anonymization:</em> aggregated 37,830 images / 45,716 annotations (Kaggle, Hugging Face, 2,078 Goa street scenes) with S3 ingestion and Grounding-DINO labels, reaching 97.64% mAP@50 and 72.13% strict mAP@50:95; (b) <em>Windmill Blade Defects:</em> achieved 87.30% mAP@50 and 85.77% F1 across 2,995 DTU Nordtank drone frames; (c) <em>Maritime SAR Ship Detection:</em> reached 59.24% mAP@50, 75.00% precision, and sub-2px localization on LS-SSDD SAR GeoTIFFs, halting at Epoch 13 to prevent overfitting.</li>
+                        <li><strong>Foundation Model Standardization:</strong> Resolved DETR zero-indexed foreground mappings, CPU worker fallbacks, and GSD mismatches; packaged Microsoft Global Renewables Watch (FCN8 ResNet-50) and NASA-IBM Prithvi foundation models (Burn Area, Flood, Crop ID) into production DLBs.</li>
                     </ul>
                 </div>
 
@@ -561,14 +598,16 @@
                             <span class="job-title-line">Python Full Stack Developer</span> &nbsp;|&nbsp;
                             <span class="job-company">MR Softwares</span>
                         </div>
-                        <span class="job-date-location">May 2025 – June 2026 | Ujjain, MP</span>
+                        <span class="job-date-location">May 2025 – June 2026 | Ujjain, Madhya Pradesh</span>
                     </div>
                     <ul class="bullet-list">
-                        <li>Designed, built, and shipped 8 production applications end-to-end (from database schema and API design to Docker containerization, Nginx SSL, CI/CD pipelines, and cloud deployment) serving enterprise clients independently.</li>
-                        <li><strong>eSchool Biometric & AI Attendance:</strong> Migrated entire service from Django+DRF to FastAPI async with aiomysql + SQLAlchemy async connection pooling in 18 working days with zero downtime; integrated DeepFace FaceNet embeddings, sub-second Qdrant cosine matching, and Silent-Face Anti-Spoofing (MiniFASNetV2 PyTorch) liveness gate.</li>
-                        <li><strong>WaahApp (WhatsApp Business SaaS):</strong> Led solo MySQL to PostgreSQL 18 + Azure to OCI infrastructure migration of 5.08M rows with zero data loss in a 2h 15min window; tuned shared_buffers and indexes to slash API latency to sub-second responses.</li>
-                        <li><strong>Avvyx & LatLong:</strong> Architected B2B SaaS PPF warranty system (FastAPI, SQLAlchemy 2.x, programmatic A4 PDFs) and real-time GPS tracking microservice (Django Channels, Traccar GPS, OpenSearch, geopy geodesic proximity alerts).</li>
-                        <li><strong>Hardware & Scraping:</strong> Built multi-court scraping engine (6+ High Courts, Playwright/Selenium, Azure Functions) and PyQt6 desktop hotel management system with physical RFID card writers via pyserial.</li>
+                        <li>Independently designed, coded, tested, and debugged 8 end-to-end production applications across 500+ Python files—owning database schemas, REST APIs, Git workflows, virtual environments, Docker Compose, Nginx + Let's Encrypt SSL, and multi-cloud CI/CD across OCI, Azure, and Linux VPS.</li>
+                        <li><strong>WaahApp (WhatsApp Business SaaS — Django, Celery, Redis, Django Channels, PostgreSQL 18):</strong> Built a multi-tenant real-time WebSocket and Meta WhatsApp Cloud API webhook platform; independently executed a zero-downtime MySQL to PostgreSQL 18 and Azure to OCI migration of 5.08M rows in 2h 15m with zero data loss, tuning <code>shared_buffers</code> and indexes to slash API latency from 5–10s to sub-second.</li>
+                        <li><strong>eSchool Biometric &amp; AI Attendance (Django+DRF to FastAPI Async):</strong> Led a complete async framework rewrite using <code>aiomysql</code> and SQLAlchemy 2.x async connection pooling in 18 working days with zero downtime; reprogrammed multi-tenant DB routing and integrated DeepFace (FaceNet) embeddings, sub-second Qdrant cosine matching, and Silent-Face Anti-Spoofing (MiniFASNetV2 PyTorch).</li>
+                        <li><strong>Avvyx (B2B SaaS PPF Warranty Platform — FastAPI, SQLAlchemy 2.x, Alembic, PostgreSQL):</strong> Architected full backend from scratch with 11 ORM models, OTP+JWT (HS256) auth, 5-step registration workflow, programmatic A4 PDF certificate and QR code generation, RBAC, audit logging, and GitHub Actions CI/CD auto-deploying to GHCR behind Nginx + SSL.</li>
+                        <li><strong>LatLong GPS Microservice &amp; API Integrations (Django/DRF, Traccar, OpenSearch):</strong> Built distributed middleware connecting Traccar GPS and OpenSearch with <code>geopy</code> geodesic-radius proximity alerts and HMAC-SHA256 signed tracking URLs, plus production webhook integrations for MSG91 SMS API v5 and Supabase.</li>
+                        <li><strong>Production Debugging &amp; ORM Optimization:</strong> Diagnosed and fixed a critical live billing bug (<code>EnumChoiceField</code> integer mismatch silently zeroing client wallets) under live load with zero data loss; eliminated N+1 ORM bottlenecks via <code>select_related</code>, <code>prefetch_related</code>, and raw SQL aggregation.</li>
+                        <li><strong>SCS Legal Scraper &amp; Hardware Systems:</strong> Built a multi-court scraping engine across 6+ High Courts (Playwright, Selenium, BeautifulSoup4, APScheduler) deployed on Azure Functions + Docker (cutting manual data collection time by ~80%), and a PyQt6 desktop hotel management system interfacing with physical RFID card writers via <code>pyserial</code>.</li>
                     </ul>
                 </div>
 
@@ -576,55 +615,88 @@
                     <div class="job-header">
                         <div>
                             <span class="job-title-line">Python Developer Intern</span> &nbsp;|&nbsp;
-                            <span class="job-company">CodeAlpha</span> &nbsp;&bull;&nbsp;
+                            <span class="job-company">CodeAlpha</span>
+                        </div>
+                        <span class="job-date-location">October 2023 – January 2024 | Remote</span>
+                    </div>
+                    <ul class="bullet-list">
+                        <li>Wrote, tested, and debugged reusable Python automation scripts for data-processing pipelines, reducing manual workflow time by ~15% and delivering production-ready data transformation utilities for live reporting systems.</li>
+                    </ul>
+                </div>
+
+                <div class="job-block">
+                    <div class="job-header">
+                        <div>
                             <span class="job-title-line">Software Engineer Intern</span> &nbsp;|&nbsp;
                             <span class="job-company">Oasis Infobyte</span>
                         </div>
-                        <span class="job-date-location">2023 – 2024</span>
+                        <span class="job-date-location">April 2023 – May 2023 | Remote</span>
                     </div>
                     <ul class="bullet-list">
-                        <li>Developed reusable Python automation scripts for data transformation pipelines and shipped 3 client-facing web applications within strict 30-day deadlines.</li>
+                        <li>Shipped 3 client-facing web applications within a 30-day deadline using Python, HTML5, CSS3, and JavaScript under ambiguous requirements.</li>
                     </ul>
                 </div>
             </section>
 
-            <!-- PROJECT DEEP DIVES -->
+            <!-- KEY PRODUCTION METRICS & ARCHITECTURAL HIGHLIGHTS -->
             <section class="resume-section">
-                <h2 class="section-title"><i class="ri-folder-shield-2-line"></i> Project Deep Dives</h2>
-                
-                <div class="project-item">
-                    <h4>1. Enterprise Deep Learning Bundle (DLB) Engine & Microservices Platform <span>Production</span></h4>
-                    <p>Engineered core DL runtime integration for XenTerra Pulse, replacing heterogeneous scripts with modular, container-ready bundles executing on both CPU worker pods and GPU clusters.</p>
-                    <p>Standardized runtime contracts across object detection, pixel classification, and instance segmentation; eliminated platform hanging bugs through resilient try-except reporting to decouple DB heartbeats from inference loops; validated with automated pytest suites.</p>
-                </div>
-
-                <div class="project-item">
-                    <h4>2. Multi-Continental Agricultural Field Delineation (Detectron2 & ResUNet) <span>Deep Learning</span></h4>
-                    <p>Built instance and semantic boundary segmentation framework: (1) USA pipeline on USDA NAIP 1.0m orthophotography with Detectron2 Mask R-CNN (ResNet-50-FPN; 68.84% Mask AP₅₀); (2) Europe pipeline on Copernicus Sentinel-2 Level-2A (10.0m GSD); (3) India 5m pipeline on ISRO Resourcesat-2 LISS-4 (ResUNet-4B with automated on-the-fly NDVI derivation and tuned Mask R-CNN anchors for smallholder plots &lt; 1 ha).</p>
-                </div>
-
-                <div class="project-item">
-                    <h4>3. Edge & Aerial Surveillance via RF-DETR Vision Transformers <span>Vision Transformer</span></h4>
-                    <p>Upgraded CNN pipelines to Meta DINOv2-backed Detection Transformers (RF-DETR Medium, 33.4M params) across 3 domains: (1) Vehicle privacy blurring on 37.8k images (97.64% mAP@50); (2) Windmill blade defect detection with Hungarian bipartite loss on RTX 5000 Ada (87.30% mAP@50); (3) Maritime SAR ship detection on LS-SSDD (59.24% mAP@50, 75.0% precision, sub-2px localization).</p>
-                </div>
-
-                <div class="project-item">
-                    <h4>4. Renewable Energy Mapping & Planetary Model Standardization <span>Geospatial Foundation</span></h4>
-                    <p>Packaged open-source foundation models (Microsoft Global Renewables Watch FCN8 ResNet-50) into production DLBs with inlined inference and radiometric normalization; formulated dataset ingestion for road defects, urban asset tracking, Microsoft Solar Farms, and NASA-IBM Prithvi foundation models (Burn Area, Flood, Crop ID).</p>
+                <h2 class="section-title"><i class="ri-dashboard-3-line"></i> Key Production Metrics &amp; Architectural Highlights</h2>
+                <div class="table-responsive">
+                    <table class="metrics-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 22%;">System / Domain</th>
+                                <th style="width: 38%;">Stack &amp; Architecture</th>
+                                <th style="width: 40%;">Verified Production Impact &amp; Metrics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>WaahApp SaaS</strong></td>
+                                <td>Django, Channels, Celery, Redis, PostgreSQL 18, OCI</td>
+                                <td><strong>5.08M rows</strong> migrated in <strong>2h 15m</strong> with <strong>0 data loss</strong>; API latency cut from 5–10s to <strong>&lt;1s</strong>.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>eSchool Biometrics</strong></td>
+                                <td>FastAPI, SQLAlchemy 2.x Async, aiomysql, Qdrant, PyTorch</td>
+                                <td>Full async rewrite from Django+DRF in <strong>18 working days</strong> with <strong>0 downtime</strong>; sub-second vector face matching.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Avvyx B2B SaaS</strong></td>
+                                <td>FastAPI, SQLAlchemy 2.x, Alembic, PostgreSQL, Docker, GHCR</td>
+                                <td>Built <strong>11 ORM models</strong>, 5-step onboarding, OTP/JWT auth, RBAC, and programmatic A4 PDF/QR generation from scratch.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Xenterra Platform</strong></td>
+                                <td>FastAPI/Django, PostgreSQL, Redis, EKS, S3, Snowflake, DLBs</td>
+                                <td>Standardized <strong>83–156 MB .dlb</strong> bundles; OAuth/2FA, credit-ledger billing APIs, and fail-loud EKS worker telemetry.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Geospatial AI</strong></td>
+                                <td>Detectron2, ResUNet-4B, GDAL, Rasterio, RTX 5000 Ada</td>
+                                <td><strong>68.84% Mask AP</strong> (4.8M vectors); <strong>2,589 parcels in 15.5s</strong> (~20 FPS); steady <strong>~3.8GB VRAM</strong> over 50,609 iterations.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RF-DETR Suite</strong></td>
+                                <td>RF-DETR Medium (DINOv2), Grounding-DINO, SAR GeoTIFFs</td>
+                                <td><strong>97.64% mAP@50</strong> (37.8k license plate images); <strong>87.30% mAP@50</strong> (windmill defects); <strong>75.00% precision</strong> (SAR ships).</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
             <!-- KEY METRICS SUMMARY -->
             <section class="resume-section">
-                <h2 class="section-title"><i class="ri-dashboard-3-line"></i> Key Metrics & Engineering Benchmarks</h2>
+                <h2 class="section-title"><i class="ri-bar-chart-box-line"></i> Benchmark Snapshot</h2>
                 <div class="metrics-card-grid">
                     <div class="metric-mini-card">
                         <strong>37,830 / 4.8M</strong>
-                        <span>37.8k+ Street Images & 4.8M Agricultural Vector Annotations</span>
+                        <span>37.8k+ Street Images &amp; 4.8M Agricultural Vector Annotations</span>
                     </div>
                     <div class="metric-mini-card">
                         <strong>97.64% / 72.1%</strong>
-                        <span>License Plate mAP@50 & Strict mAP@50:95 (RF-DETR)</span>
+                        <span>License Plate mAP@50 &amp; Strict mAP@50:95 (RF-DETR)</span>
                     </div>
                     <div class="metric-mini-card">
                         <strong>68.84% AP₅₀</strong>
@@ -647,17 +719,20 @@
 
             <!-- EDUCATION & CERTIFICATIONS -->
             <section class="resume-section">
-                <h2 class="section-title"><i class="ri-award-line"></i> Education & Certifications</h2>
+                <h2 class="section-title"><i class="ri-award-line"></i> Education &amp; Certifications</h2>
                 <div class="two-col-grid">
                     <div class="info-card">
-                        <h4>B.Tech in Computer Science and Information Technology</h4>
-                        <p>IES IPS Academy, Indore, Madhya Pradesh | 2021 – 2025</p>
-                        <p><strong>GPA: 7.50 / 10.0</strong></p>
+                        <h4>B.Tech in Computer Science &amp; Information Technology</h4>
+                        <p>IES IPS Academy, Indore, MP | 2021 – 2025</p>
+                        <p style="margin-top: 0.35rem;"><strong>GPA: 7.50 / 10.0</strong></p>
+                        <hr style="border: none; border-top: 1px solid var(--border-subtle); margin: 0.75rem 0;">
+                        <h4>Senior Secondary (Class XII), Science (PCM)</h4>
+                        <p>RPM Academy, Gorakhpur, UP | 2019 – 2021</p>
                     </div>
                     <div class="info-card">
                         <h4>Professional Certifications</h4>
-                        <p><strong>Python Developer Associate (PDAC-24)</strong> — ITechCert / AICERT (Jul 2024)</p>
-                        <p><strong>Computer Vision Builder</strong> — IIT Delhi (FITT / MP-IITD) (Mar 2024)</p>
+                        <p style="margin-bottom: 0.6rem;"><strong>Python Developer Associate (PDAC-24)</strong><br><span style="color: var(--text-dim);">ITechCert / AICERT (Jul 2024)</span></p>
+                        <p><strong>Computer Vision Builder</strong><br><span style="color: var(--text-dim);">IIT Delhi, FITT / MP-IITD (Mar 2024)</span></p>
                     </div>
                 </div>
             </section>
